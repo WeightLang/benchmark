@@ -1,0 +1,5396 @@
+{
+  "backend": "native-cpu",
+  "by_task": {
+    "charlm": {
+      "candidate": {
+        "accuracy": 0.2934027777777778,
+        "cross_entropy": 2.3389134497816344,
+        "n": 12,
+        "perplexity_from_mean_cross_entropy": 10.369962953658032
+      },
+      "kaiming_normal": {
+        "accuracy": 0.30729166666666663,
+        "cross_entropy": 2.356607764189228,
+        "n": 12,
+        "perplexity_from_mean_cross_entropy": 10.5550853152376
+      },
+      "normal": {
+        "accuracy": 0.2664930555555555,
+        "cross_entropy": 2.3080705514702053,
+        "n": 12,
+        "perplexity_from_mean_cross_entropy": 10.05500531151081
+      },
+      "xavier_uniform": {
+        "accuracy": 0.2934027777777778,
+        "cross_entropy": 2.3389134497816344,
+        "n": 12,
+        "perplexity_from_mean_cross_entropy": 10.369962953658032
+      }
+    },
+    "digits": {
+      "candidate": {
+        "accuracy": 0.3411458333333333,
+        "cross_entropy": 1.776536989639668,
+        "n": 12,
+        "perplexity_from_mean_cross_entropy": 5.909356780095252
+      },
+      "kaiming_normal": {
+        "accuracy": 0.3680555555555555,
+        "cross_entropy": 1.7836789454816984,
+        "n": 12,
+        "perplexity_from_mean_cross_entropy": 5.951712215561342
+      },
+      "normal": {
+        "accuracy": 0.31684027777777773,
+        "cross_entropy": 1.7921852909446254,
+        "n": 12,
+        "perplexity_from_mean_cross_entropy": 6.0025554743490455
+      },
+      "xavier_uniform": {
+        "accuracy": 0.3411458333333333,
+        "cross_entropy": 1.776536989639668,
+        "n": 12,
+        "perplexity_from_mean_cross_entropy": 5.909356780095252
+      }
+    }
+  },
+  "paired_accuracy_delta": {
+    "kaiming_normal": -0.02039930555555555,
+    "normal": 0.025607638888888885,
+    "xavier_uniform": 0.0
+  },
+  "protocol": {
+    "config": {
+      "architecture_seed": 20261110,
+      "batch_size": 16,
+      "draws": 4,
+      "initialization_seeds": [
+        11,
+        29,
+        47
+      ],
+      "learning_rate": 0.009999999776482582,
+      "steps": 20,
+      "test_samples": 96,
+      "test_seed": 202,
+      "train_samples": 96,
+      "train_seed": 101,
+      "version": 1
+    },
+    "data_sha256": {
+      "charlm-test.json": "64cfa9aa4910b53ad85ae58420679dd167430948a22a09a33c392acb04b0e8b0",
+      "charlm-train.json": "6b697331b3867e2fa7020658afe42fa98b6d57f77eba712671d45f80ecbf0087",
+      "digits-test.json": "e16ac55d231b30dd253f3c67f40e7dad8e92b9ad1abb30a18c18b90e1395e88e",
+      "digits-train.json": "60cb08bdde1e8b2b9e553f944c78a92ef1fd5b84ccea5586b32271141fa8c736"
+    },
+    "model_sha256": {
+      "cnn": "77a66a1a931e05557dae20f4be16115aa9a5df53adcd591998e07378e9bc810d",
+      "mlp": "62563e69547ffac0711d2738d88da4ac42c88b8fccc9687b40750b33e83b5024",
+      "resnet": "2b036b9fa5f1606a776d6d0ee444ec01d583cadbaed46dc2e0e711eaffd2d0fa",
+      "transformer": "594e621444a876e4506b233982624216eba5b2012666664ee8195ffff03e21bd"
+    },
+    "trials": [
+      {
+        "family": "resnet",
+        "id": "digits-draw-00-resnet-seed-11",
+        "parameters": [
+          {
+            "name": "stem_weight",
+            "shape": [
+              2,
+              1,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "stem_bias",
+            "shape": [
+              2
+            ]
+          },
+          {
+            "name": "block1_weight",
+            "shape": [
+              2,
+              2,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "block1_bias",
+            "shape": [
+              2
+            ]
+          },
+          {
+            "name": "block2_weight",
+            "shape": [
+              2,
+              2,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "block2_bias",
+            "shape": [
+              2
+            ]
+          },
+          {
+            "name": "head_weight",
+            "shape": [
+              10,
+              32
+            ]
+          },
+          {
+            "name": "head_bias",
+            "shape": [
+              10
+            ]
+          }
+        ],
+        "seed": 11,
+        "task": "digits"
+      },
+      {
+        "family": "resnet",
+        "id": "digits-draw-00-resnet-seed-29",
+        "parameters": [
+          {
+            "name": "stem_weight",
+            "shape": [
+              2,
+              1,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "stem_bias",
+            "shape": [
+              2
+            ]
+          },
+          {
+            "name": "block1_weight",
+            "shape": [
+              2,
+              2,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "block1_bias",
+            "shape": [
+              2
+            ]
+          },
+          {
+            "name": "block2_weight",
+            "shape": [
+              2,
+              2,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "block2_bias",
+            "shape": [
+              2
+            ]
+          },
+          {
+            "name": "head_weight",
+            "shape": [
+              10,
+              32
+            ]
+          },
+          {
+            "name": "head_bias",
+            "shape": [
+              10
+            ]
+          }
+        ],
+        "seed": 29,
+        "task": "digits"
+      },
+      {
+        "family": "resnet",
+        "id": "digits-draw-00-resnet-seed-47",
+        "parameters": [
+          {
+            "name": "stem_weight",
+            "shape": [
+              2,
+              1,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "stem_bias",
+            "shape": [
+              2
+            ]
+          },
+          {
+            "name": "block1_weight",
+            "shape": [
+              2,
+              2,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "block1_bias",
+            "shape": [
+              2
+            ]
+          },
+          {
+            "name": "block2_weight",
+            "shape": [
+              2,
+              2,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "block2_bias",
+            "shape": [
+              2
+            ]
+          },
+          {
+            "name": "head_weight",
+            "shape": [
+              10,
+              32
+            ]
+          },
+          {
+            "name": "head_bias",
+            "shape": [
+              10
+            ]
+          }
+        ],
+        "seed": 47,
+        "task": "digits"
+      },
+      {
+        "family": "resnet",
+        "id": "charlm-draw-00-resnet-seed-11",
+        "parameters": [
+          {
+            "name": "stem_weight",
+            "shape": [
+              2,
+              1,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "stem_bias",
+            "shape": [
+              2
+            ]
+          },
+          {
+            "name": "block1_weight",
+            "shape": [
+              2,
+              2,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "block1_bias",
+            "shape": [
+              2
+            ]
+          },
+          {
+            "name": "block2_weight",
+            "shape": [
+              2,
+              2,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "block2_bias",
+            "shape": [
+              2
+            ]
+          },
+          {
+            "name": "head_weight",
+            "shape": [
+              16,
+              32
+            ]
+          },
+          {
+            "name": "head_bias",
+            "shape": [
+              16
+            ]
+          }
+        ],
+        "seed": 11,
+        "task": "charlm"
+      },
+      {
+        "family": "resnet",
+        "id": "charlm-draw-00-resnet-seed-29",
+        "parameters": [
+          {
+            "name": "stem_weight",
+            "shape": [
+              2,
+              1,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "stem_bias",
+            "shape": [
+              2
+            ]
+          },
+          {
+            "name": "block1_weight",
+            "shape": [
+              2,
+              2,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "block1_bias",
+            "shape": [
+              2
+            ]
+          },
+          {
+            "name": "block2_weight",
+            "shape": [
+              2,
+              2,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "block2_bias",
+            "shape": [
+              2
+            ]
+          },
+          {
+            "name": "head_weight",
+            "shape": [
+              16,
+              32
+            ]
+          },
+          {
+            "name": "head_bias",
+            "shape": [
+              16
+            ]
+          }
+        ],
+        "seed": 29,
+        "task": "charlm"
+      },
+      {
+        "family": "resnet",
+        "id": "charlm-draw-00-resnet-seed-47",
+        "parameters": [
+          {
+            "name": "stem_weight",
+            "shape": [
+              2,
+              1,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "stem_bias",
+            "shape": [
+              2
+            ]
+          },
+          {
+            "name": "block1_weight",
+            "shape": [
+              2,
+              2,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "block1_bias",
+            "shape": [
+              2
+            ]
+          },
+          {
+            "name": "block2_weight",
+            "shape": [
+              2,
+              2,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "block2_bias",
+            "shape": [
+              2
+            ]
+          },
+          {
+            "name": "head_weight",
+            "shape": [
+              16,
+              32
+            ]
+          },
+          {
+            "name": "head_bias",
+            "shape": [
+              16
+            ]
+          }
+        ],
+        "seed": 47,
+        "task": "charlm"
+      },
+      {
+        "family": "cnn",
+        "id": "digits-draw-01-cnn-seed-11",
+        "parameters": [
+          {
+            "name": "conv_weight",
+            "shape": [
+              4,
+              1,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "conv_bias",
+            "shape": [
+              4
+            ]
+          },
+          {
+            "name": "head_weight",
+            "shape": [
+              10,
+              64
+            ]
+          },
+          {
+            "name": "head_bias",
+            "shape": [
+              10
+            ]
+          }
+        ],
+        "seed": 11,
+        "task": "digits"
+      },
+      {
+        "family": "cnn",
+        "id": "digits-draw-01-cnn-seed-29",
+        "parameters": [
+          {
+            "name": "conv_weight",
+            "shape": [
+              4,
+              1,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "conv_bias",
+            "shape": [
+              4
+            ]
+          },
+          {
+            "name": "head_weight",
+            "shape": [
+              10,
+              64
+            ]
+          },
+          {
+            "name": "head_bias",
+            "shape": [
+              10
+            ]
+          }
+        ],
+        "seed": 29,
+        "task": "digits"
+      },
+      {
+        "family": "cnn",
+        "id": "digits-draw-01-cnn-seed-47",
+        "parameters": [
+          {
+            "name": "conv_weight",
+            "shape": [
+              4,
+              1,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "conv_bias",
+            "shape": [
+              4
+            ]
+          },
+          {
+            "name": "head_weight",
+            "shape": [
+              10,
+              64
+            ]
+          },
+          {
+            "name": "head_bias",
+            "shape": [
+              10
+            ]
+          }
+        ],
+        "seed": 47,
+        "task": "digits"
+      },
+      {
+        "family": "cnn",
+        "id": "charlm-draw-01-cnn-seed-11",
+        "parameters": [
+          {
+            "name": "conv_weight",
+            "shape": [
+              4,
+              1,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "conv_bias",
+            "shape": [
+              4
+            ]
+          },
+          {
+            "name": "head_weight",
+            "shape": [
+              16,
+              64
+            ]
+          },
+          {
+            "name": "head_bias",
+            "shape": [
+              16
+            ]
+          }
+        ],
+        "seed": 11,
+        "task": "charlm"
+      },
+      {
+        "family": "cnn",
+        "id": "charlm-draw-01-cnn-seed-29",
+        "parameters": [
+          {
+            "name": "conv_weight",
+            "shape": [
+              4,
+              1,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "conv_bias",
+            "shape": [
+              4
+            ]
+          },
+          {
+            "name": "head_weight",
+            "shape": [
+              16,
+              64
+            ]
+          },
+          {
+            "name": "head_bias",
+            "shape": [
+              16
+            ]
+          }
+        ],
+        "seed": 29,
+        "task": "charlm"
+      },
+      {
+        "family": "cnn",
+        "id": "charlm-draw-01-cnn-seed-47",
+        "parameters": [
+          {
+            "name": "conv_weight",
+            "shape": [
+              4,
+              1,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "conv_bias",
+            "shape": [
+              4
+            ]
+          },
+          {
+            "name": "head_weight",
+            "shape": [
+              16,
+              64
+            ]
+          },
+          {
+            "name": "head_bias",
+            "shape": [
+              16
+            ]
+          }
+        ],
+        "seed": 47,
+        "task": "charlm"
+      },
+      {
+        "family": "mlp",
+        "id": "digits-draw-02-mlp-seed-11",
+        "parameters": [
+          {
+            "name": "hidden_weight",
+            "shape": [
+              16,
+              64
+            ]
+          },
+          {
+            "name": "hidden_bias",
+            "shape": [
+              16
+            ]
+          },
+          {
+            "name": "head_weight",
+            "shape": [
+              10,
+              16
+            ]
+          },
+          {
+            "name": "head_bias",
+            "shape": [
+              10
+            ]
+          }
+        ],
+        "seed": 11,
+        "task": "digits"
+      },
+      {
+        "family": "mlp",
+        "id": "digits-draw-02-mlp-seed-29",
+        "parameters": [
+          {
+            "name": "hidden_weight",
+            "shape": [
+              16,
+              64
+            ]
+          },
+          {
+            "name": "hidden_bias",
+            "shape": [
+              16
+            ]
+          },
+          {
+            "name": "head_weight",
+            "shape": [
+              10,
+              16
+            ]
+          },
+          {
+            "name": "head_bias",
+            "shape": [
+              10
+            ]
+          }
+        ],
+        "seed": 29,
+        "task": "digits"
+      },
+      {
+        "family": "mlp",
+        "id": "digits-draw-02-mlp-seed-47",
+        "parameters": [
+          {
+            "name": "hidden_weight",
+            "shape": [
+              16,
+              64
+            ]
+          },
+          {
+            "name": "hidden_bias",
+            "shape": [
+              16
+            ]
+          },
+          {
+            "name": "head_weight",
+            "shape": [
+              10,
+              16
+            ]
+          },
+          {
+            "name": "head_bias",
+            "shape": [
+              10
+            ]
+          }
+        ],
+        "seed": 47,
+        "task": "digits"
+      },
+      {
+        "family": "mlp",
+        "id": "charlm-draw-02-mlp-seed-11",
+        "parameters": [
+          {
+            "name": "hidden_weight",
+            "shape": [
+              16,
+              64
+            ]
+          },
+          {
+            "name": "hidden_bias",
+            "shape": [
+              16
+            ]
+          },
+          {
+            "name": "head_weight",
+            "shape": [
+              16,
+              16
+            ]
+          },
+          {
+            "name": "head_bias",
+            "shape": [
+              16
+            ]
+          }
+        ],
+        "seed": 11,
+        "task": "charlm"
+      },
+      {
+        "family": "mlp",
+        "id": "charlm-draw-02-mlp-seed-29",
+        "parameters": [
+          {
+            "name": "hidden_weight",
+            "shape": [
+              16,
+              64
+            ]
+          },
+          {
+            "name": "hidden_bias",
+            "shape": [
+              16
+            ]
+          },
+          {
+            "name": "head_weight",
+            "shape": [
+              16,
+              16
+            ]
+          },
+          {
+            "name": "head_bias",
+            "shape": [
+              16
+            ]
+          }
+        ],
+        "seed": 29,
+        "task": "charlm"
+      },
+      {
+        "family": "mlp",
+        "id": "charlm-draw-02-mlp-seed-47",
+        "parameters": [
+          {
+            "name": "hidden_weight",
+            "shape": [
+              16,
+              64
+            ]
+          },
+          {
+            "name": "hidden_bias",
+            "shape": [
+              16
+            ]
+          },
+          {
+            "name": "head_weight",
+            "shape": [
+              16,
+              16
+            ]
+          },
+          {
+            "name": "head_bias",
+            "shape": [
+              16
+            ]
+          }
+        ],
+        "seed": 47,
+        "task": "charlm"
+      },
+      {
+        "family": "transformer",
+        "id": "digits-draw-03-transformer-seed-11",
+        "parameters": [
+          {
+            "name": "query_weight",
+            "shape": [
+              16,
+              16
+            ]
+          },
+          {
+            "name": "key_weight",
+            "shape": [
+              16,
+              16
+            ]
+          },
+          {
+            "name": "value_weight",
+            "shape": [
+              16,
+              16
+            ]
+          },
+          {
+            "name": "attention_weight",
+            "shape": [
+              16,
+              16
+            ]
+          },
+          {
+            "name": "norm1_gamma",
+            "shape": [
+              16
+            ]
+          },
+          {
+            "name": "norm1_beta",
+            "shape": [
+              16
+            ]
+          },
+          {
+            "name": "ff1_weight",
+            "shape": [
+              16,
+              32
+            ]
+          },
+          {
+            "name": "ff2_weight",
+            "shape": [
+              32,
+              16
+            ]
+          },
+          {
+            "name": "norm2_gamma",
+            "shape": [
+              16
+            ]
+          },
+          {
+            "name": "norm2_beta",
+            "shape": [
+              16
+            ]
+          },
+          {
+            "name": "head_weight",
+            "shape": [
+              10,
+              64
+            ]
+          },
+          {
+            "name": "head_bias",
+            "shape": [
+              10
+            ]
+          }
+        ],
+        "seed": 11,
+        "task": "digits"
+      },
+      {
+        "family": "transformer",
+        "id": "digits-draw-03-transformer-seed-29",
+        "parameters": [
+          {
+            "name": "query_weight",
+            "shape": [
+              16,
+              16
+            ]
+          },
+          {
+            "name": "key_weight",
+            "shape": [
+              16,
+              16
+            ]
+          },
+          {
+            "name": "value_weight",
+            "shape": [
+              16,
+              16
+            ]
+          },
+          {
+            "name": "attention_weight",
+            "shape": [
+              16,
+              16
+            ]
+          },
+          {
+            "name": "norm1_gamma",
+            "shape": [
+              16
+            ]
+          },
+          {
+            "name": "norm1_beta",
+            "shape": [
+              16
+            ]
+          },
+          {
+            "name": "ff1_weight",
+            "shape": [
+              16,
+              32
+            ]
+          },
+          {
+            "name": "ff2_weight",
+            "shape": [
+              32,
+              16
+            ]
+          },
+          {
+            "name": "norm2_gamma",
+            "shape": [
+              16
+            ]
+          },
+          {
+            "name": "norm2_beta",
+            "shape": [
+              16
+            ]
+          },
+          {
+            "name": "head_weight",
+            "shape": [
+              10,
+              64
+            ]
+          },
+          {
+            "name": "head_bias",
+            "shape": [
+              10
+            ]
+          }
+        ],
+        "seed": 29,
+        "task": "digits"
+      },
+      {
+        "family": "transformer",
+        "id": "digits-draw-03-transformer-seed-47",
+        "parameters": [
+          {
+            "name": "query_weight",
+            "shape": [
+              16,
+              16
+            ]
+          },
+          {
+            "name": "key_weight",
+            "shape": [
+              16,
+              16
+            ]
+          },
+          {
+            "name": "value_weight",
+            "shape": [
+              16,
+              16
+            ]
+          },
+          {
+            "name": "attention_weight",
+            "shape": [
+              16,
+              16
+            ]
+          },
+          {
+            "name": "norm1_gamma",
+            "shape": [
+              16
+            ]
+          },
+          {
+            "name": "norm1_beta",
+            "shape": [
+              16
+            ]
+          },
+          {
+            "name": "ff1_weight",
+            "shape": [
+              16,
+              32
+            ]
+          },
+          {
+            "name": "ff2_weight",
+            "shape": [
+              32,
+              16
+            ]
+          },
+          {
+            "name": "norm2_gamma",
+            "shape": [
+              16
+            ]
+          },
+          {
+            "name": "norm2_beta",
+            "shape": [
+              16
+            ]
+          },
+          {
+            "name": "head_weight",
+            "shape": [
+              10,
+              64
+            ]
+          },
+          {
+            "name": "head_bias",
+            "shape": [
+              10
+            ]
+          }
+        ],
+        "seed": 47,
+        "task": "digits"
+      },
+      {
+        "family": "transformer",
+        "id": "charlm-draw-03-transformer-seed-11",
+        "parameters": [
+          {
+            "name": "query_weight",
+            "shape": [
+              16,
+              16
+            ]
+          },
+          {
+            "name": "key_weight",
+            "shape": [
+              16,
+              16
+            ]
+          },
+          {
+            "name": "value_weight",
+            "shape": [
+              16,
+              16
+            ]
+          },
+          {
+            "name": "attention_weight",
+            "shape": [
+              16,
+              16
+            ]
+          },
+          {
+            "name": "norm1_gamma",
+            "shape": [
+              16
+            ]
+          },
+          {
+            "name": "norm1_beta",
+            "shape": [
+              16
+            ]
+          },
+          {
+            "name": "ff1_weight",
+            "shape": [
+              16,
+              32
+            ]
+          },
+          {
+            "name": "ff2_weight",
+            "shape": [
+              32,
+              16
+            ]
+          },
+          {
+            "name": "norm2_gamma",
+            "shape": [
+              16
+            ]
+          },
+          {
+            "name": "norm2_beta",
+            "shape": [
+              16
+            ]
+          },
+          {
+            "name": "head_weight",
+            "shape": [
+              16,
+              64
+            ]
+          },
+          {
+            "name": "head_bias",
+            "shape": [
+              16
+            ]
+          }
+        ],
+        "seed": 11,
+        "task": "charlm"
+      },
+      {
+        "family": "transformer",
+        "id": "charlm-draw-03-transformer-seed-29",
+        "parameters": [
+          {
+            "name": "query_weight",
+            "shape": [
+              16,
+              16
+            ]
+          },
+          {
+            "name": "key_weight",
+            "shape": [
+              16,
+              16
+            ]
+          },
+          {
+            "name": "value_weight",
+            "shape": [
+              16,
+              16
+            ]
+          },
+          {
+            "name": "attention_weight",
+            "shape": [
+              16,
+              16
+            ]
+          },
+          {
+            "name": "norm1_gamma",
+            "shape": [
+              16
+            ]
+          },
+          {
+            "name": "norm1_beta",
+            "shape": [
+              16
+            ]
+          },
+          {
+            "name": "ff1_weight",
+            "shape": [
+              16,
+              32
+            ]
+          },
+          {
+            "name": "ff2_weight",
+            "shape": [
+              32,
+              16
+            ]
+          },
+          {
+            "name": "norm2_gamma",
+            "shape": [
+              16
+            ]
+          },
+          {
+            "name": "norm2_beta",
+            "shape": [
+              16
+            ]
+          },
+          {
+            "name": "head_weight",
+            "shape": [
+              16,
+              64
+            ]
+          },
+          {
+            "name": "head_bias",
+            "shape": [
+              16
+            ]
+          }
+        ],
+        "seed": 29,
+        "task": "charlm"
+      },
+      {
+        "family": "transformer",
+        "id": "charlm-draw-03-transformer-seed-47",
+        "parameters": [
+          {
+            "name": "query_weight",
+            "shape": [
+              16,
+              16
+            ]
+          },
+          {
+            "name": "key_weight",
+            "shape": [
+              16,
+              16
+            ]
+          },
+          {
+            "name": "value_weight",
+            "shape": [
+              16,
+              16
+            ]
+          },
+          {
+            "name": "attention_weight",
+            "shape": [
+              16,
+              16
+            ]
+          },
+          {
+            "name": "norm1_gamma",
+            "shape": [
+              16
+            ]
+          },
+          {
+            "name": "norm1_beta",
+            "shape": [
+              16
+            ]
+          },
+          {
+            "name": "ff1_weight",
+            "shape": [
+              16,
+              32
+            ]
+          },
+          {
+            "name": "ff2_weight",
+            "shape": [
+              32,
+              16
+            ]
+          },
+          {
+            "name": "norm2_gamma",
+            "shape": [
+              16
+            ]
+          },
+          {
+            "name": "norm2_beta",
+            "shape": [
+              16
+            ]
+          },
+          {
+            "name": "head_weight",
+            "shape": [
+              16,
+              64
+            ]
+          },
+          {
+            "name": "head_bias",
+            "shape": [
+              16
+            ]
+          }
+        ],
+        "seed": 47,
+        "task": "charlm"
+      }
+    ],
+    "version": 1,
+    "weightlang_revision": "379729a3cd0a15ccace3962496edd3f1502eb18f"
+  },
+  "reward": 0.3172743055555555,
+  "summary": {
+    "candidate": {
+      "mean_final_accuracy": 0.3172743055555555,
+      "n": 24,
+      "stddev_across_trials": 0.16885953142228538
+    },
+    "kaiming_normal": {
+      "mean_final_accuracy": 0.33767361111111116,
+      "n": 24,
+      "stddev_across_trials": 0.10604807586242375
+    },
+    "normal": {
+      "mean_final_accuracy": 0.2916666666666667,
+      "n": 24,
+      "stddev_across_trials": 0.2280522971634925
+    },
+    "xavier_uniform": {
+      "mean_final_accuracy": 0.3172743055555555,
+      "n": 24,
+      "stddev_across_trials": 0.16885953142228538
+    }
+  },
+  "trials": [
+    {
+      "family": "resnet",
+      "method": "normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.125,
+          "cross_entropy": 2.2969411165859257,
+          "perplexity": 9.943719209046469
+        },
+        "initial": {
+          "accuracy": 0.03125,
+          "cross_entropy": 2.3028835437986674,
+          "perplexity": 10.002984953454941
+        },
+        "training_loss": [
+          2.302635908126831,
+          2.2979235649108887,
+          2.3025169372558594,
+          2.2964141368865967,
+          2.2940516471862793,
+          2.276707410812378,
+          2.282505750656128,
+          2.284175157546997,
+          2.296764850616455,
+          2.225989580154419,
+          2.295130491256714,
+          2.2952280044555664,
+          2.263178586959839,
+          2.213524341583252,
+          2.2190442085266113,
+          2.196709394454956,
+          2.2228572368621826,
+          2.1428656578063965,
+          2.275357484817505,
+          2.2507987022399902
+        ],
+        "weights_revision": "02b8a9acc51a1608890ee76cea1e46aa2e3bd9aa88813a4d77bd62fabc1255d4"
+      },
+      "task": "digits",
+      "trial": "digits-draw-00-resnet-seed-11"
+    },
+    {
+      "family": "resnet",
+      "method": "xavier_uniform",
+      "metrics": {
+        "final": {
+          "accuracy": 0.13541666666666666,
+          "cross_entropy": 2.2800436240995414,
+          "perplexity": 9.777106917711226
+        },
+        "initial": {
+          "accuracy": 0.07291666666666667,
+          "cross_entropy": 2.7638873527716807,
+          "perplexity": 15.861382046133066
+        },
+        "training_loss": [
+          2.6059861183166504,
+          2.522433280944824,
+          2.448267698287964,
+          2.429124593734741,
+          2.2462401390075684,
+          2.3653576374053955,
+          2.3555264472961426,
+          2.381568193435669,
+          2.242992401123047,
+          2.2087111473083496,
+          2.2672719955444336,
+          2.3143415451049805,
+          2.297382354736328,
+          2.2206616401672363,
+          2.2285494804382324,
+          2.2399048805236816,
+          2.2540338039398193,
+          2.2429654598236084,
+          2.290043592453003,
+          2.2000949382781982
+        ],
+        "weights_revision": "929d54fcecc3c9b4995ba434f9b90a777e12494862f52b98d4206f604fcfdd1a"
+      },
+      "task": "digits",
+      "trial": "digits-draw-00-resnet-seed-11"
+    },
+    {
+      "family": "resnet",
+      "method": "kaiming_normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.19791666666666666,
+          "cross_entropy": 2.260361383010215,
+          "perplexity": 9.586552958214616
+        },
+        "initial": {
+          "accuracy": 0.03125,
+          "cross_entropy": 2.3271619253601163,
+          "perplexity": 10.248813321399199
+        },
+        "training_loss": [
+          2.311309814453125,
+          2.2902286052703857,
+          2.309436321258545,
+          2.2881059646606445,
+          2.293414831161499,
+          2.2715506553649902,
+          2.2707955837249756,
+          2.2826154232025146,
+          2.296724319458008,
+          2.238128423690796,
+          2.301197052001953,
+          2.2701547145843506,
+          2.2586677074432373,
+          2.240715742111206,
+          2.2156410217285156,
+          2.216881513595581,
+          2.235631227493286,
+          2.1936140060424805,
+          2.246014356613159,
+          2.2371444702148438
+        ],
+        "weights_revision": "f6d265750ef37b4d183893b644f64b9d27b299c63a2570d33092c0b6caba81f0"
+      },
+      "task": "digits",
+      "trial": "digits-draw-00-resnet-seed-11"
+    },
+    {
+      "family": "resnet",
+      "method": "candidate",
+      "metrics": {
+        "final": {
+          "accuracy": 0.13541666666666666,
+          "cross_entropy": 2.2800436240995414,
+          "perplexity": 9.777106917711226
+        },
+        "initial": {
+          "accuracy": 0.07291666666666667,
+          "cross_entropy": 2.7638873527716807,
+          "perplexity": 15.861382046133066
+        },
+        "training_loss": [
+          2.6059861183166504,
+          2.522433280944824,
+          2.448267698287964,
+          2.429124593734741,
+          2.2462401390075684,
+          2.3653576374053955,
+          2.3555264472961426,
+          2.381568193435669,
+          2.242992401123047,
+          2.2087111473083496,
+          2.2672719955444336,
+          2.3143415451049805,
+          2.297382354736328,
+          2.2206616401672363,
+          2.2285494804382324,
+          2.2399048805236816,
+          2.2540338039398193,
+          2.2429654598236084,
+          2.290043592453003,
+          2.2000949382781982
+        ],
+        "weights_revision": "929d54fcecc3c9b4995ba434f9b90a777e12494862f52b98d4206f604fcfdd1a"
+      },
+      "task": "digits",
+      "trial": "digits-draw-00-resnet-seed-11"
+    },
+    {
+      "family": "resnet",
+      "method": "normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.125,
+          "cross_entropy": 2.2407506988642014,
+          "perplexity": 9.40038549803399
+        },
+        "initial": {
+          "accuracy": 0.21875,
+          "cross_entropy": 2.299811008387508,
+          "perplexity": 9.97229759610615
+        },
+        "training_loss": [
+          2.303799629211426,
+          2.2961931228637695,
+          2.2964625358581543,
+          2.290006160736084,
+          2.275963068008423,
+          2.243947982788086,
+          2.2531275749206543,
+          2.2586119174957275,
+          2.2743921279907227,
+          2.1298084259033203,
+          2.3018531799316406,
+          2.301018714904785,
+          2.2143194675445557,
+          2.107311725616455,
+          2.1757309436798096,
+          2.108616590499878,
+          2.161550283432007,
+          1.978842854499817,
+          2.1952006816864014,
+          2.224100112915039
+        ],
+        "weights_revision": "8df5f3ca725224261bbd4d125ce661e91c3e5b2c0987ba187c85334d40d03f90"
+      },
+      "task": "digits",
+      "trial": "digits-draw-00-resnet-seed-29"
+    },
+    {
+      "family": "resnet",
+      "method": "xavier_uniform",
+      "metrics": {
+        "final": {
+          "accuracy": 0.125,
+          "cross_entropy": 2.270680834354596,
+          "perplexity": 9.685993126560728
+        },
+        "initial": {
+          "accuracy": 0.08333333333333333,
+          "cross_entropy": 2.304558013529168,
+          "perplexity": 10.019748680233773
+        },
+        "training_loss": [
+          2.305617094039917,
+          2.2838175296783447,
+          2.2962582111358643,
+          2.3016903400421143,
+          2.2809019088745117,
+          2.243992805480957,
+          2.2374889850616455,
+          2.2935547828674316,
+          2.2677783966064453,
+          2.144775390625,
+          2.2535624504089355,
+          2.260509729385376,
+          2.1176791191101074,
+          2.0310349464416504,
+          2.0342488288879395,
+          1.923796534538269,
+          2.0558996200561523,
+          2.0630791187286377,
+          2.3424201011657715,
+          2.1905159950256348
+        ],
+        "weights_revision": "e9c09d393be5c698d5f3dd66d4546f7480c3327cec1d0830e5a5f297ef8f189e"
+      },
+      "task": "digits",
+      "trial": "digits-draw-00-resnet-seed-29"
+    },
+    {
+      "family": "resnet",
+      "method": "kaiming_normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.21875,
+          "cross_entropy": 1.9976435791455351,
+          "perplexity": 7.371664871617066
+        },
+        "initial": {
+          "accuracy": 0.14583333333333334,
+          "cross_entropy": 2.2953975404989873,
+          "perplexity": 9.928382161855005
+        },
+        "training_loss": [
+          2.4541869163513184,
+          2.3867759704589844,
+          2.2803564071655273,
+          2.3219213485717773,
+          2.1977357864379883,
+          2.1982309818267822,
+          2.145179271697998,
+          2.1550559997558594,
+          2.170440196990967,
+          2.1099181175231934,
+          2.4357714653015137,
+          2.015831232070923,
+          2.0559396743774414,
+          1.9413084983825684,
+          2.0315282344818115,
+          1.9167791604995728,
+          1.8739069700241089,
+          1.85722815990448,
+          1.9619977474212646,
+          2.0853424072265625
+        ],
+        "weights_revision": "b0958c568d1b2855368a1baba4c2865b6cec6b9e30a381107a2a4b6cd9ffeae2"
+      },
+      "task": "digits",
+      "trial": "digits-draw-00-resnet-seed-29"
+    },
+    {
+      "family": "resnet",
+      "method": "candidate",
+      "metrics": {
+        "final": {
+          "accuracy": 0.125,
+          "cross_entropy": 2.270680834354596,
+          "perplexity": 9.685993126560728
+        },
+        "initial": {
+          "accuracy": 0.08333333333333333,
+          "cross_entropy": 2.304558013529168,
+          "perplexity": 10.019748680233773
+        },
+        "training_loss": [
+          2.305617094039917,
+          2.2838175296783447,
+          2.2962582111358643,
+          2.3016903400421143,
+          2.2809019088745117,
+          2.243992805480957,
+          2.2374889850616455,
+          2.2935547828674316,
+          2.2677783966064453,
+          2.144775390625,
+          2.2535624504089355,
+          2.260509729385376,
+          2.1176791191101074,
+          2.0310349464416504,
+          2.0342488288879395,
+          1.923796534538269,
+          2.0558996200561523,
+          2.0630791187286377,
+          2.3424201011657715,
+          2.1905159950256348
+        ],
+        "weights_revision": "e9c09d393be5c698d5f3dd66d4546f7480c3327cec1d0830e5a5f297ef8f189e"
+      },
+      "task": "digits",
+      "trial": "digits-draw-00-resnet-seed-29"
+    },
+    {
+      "family": "resnet",
+      "method": "normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.125,
+          "cross_entropy": 2.2782760147353867,
+          "perplexity": 9.759840076979591
+        },
+        "initial": {
+          "accuracy": 0.052083333333333336,
+          "cross_entropy": 2.301569247839416,
+          "perplexity": 9.989846706413882
+        },
+        "training_loss": [
+          2.3011465072631836,
+          2.2896690368652344,
+          2.294940233230591,
+          2.289069414138794,
+          2.2816834449768066,
+          2.249967336654663,
+          2.2726452350616455,
+          2.26114821434021,
+          2.283975601196289,
+          2.1413321495056152,
+          2.2543909549713135,
+          2.3148152828216553,
+          2.232126474380493,
+          2.1575732231140137,
+          2.173415422439575,
+          2.1264185905456543,
+          2.2158336639404297,
+          2.034137010574341,
+          2.2427875995635986,
+          2.210479974746704
+        ],
+        "weights_revision": "c84fd9bf2592b1895297514d403a6517c39a28bcdc15c9efd0704ba8daa000cc"
+      },
+      "task": "digits",
+      "trial": "digits-draw-00-resnet-seed-47"
+    },
+    {
+      "family": "resnet",
+      "method": "xavier_uniform",
+      "metrics": {
+        "final": {
+          "accuracy": 0.21875,
+          "cross_entropy": 2.077665686363489,
+          "perplexity": 7.9858057646536915
+        },
+        "initial": {
+          "accuracy": 0.041666666666666664,
+          "cross_entropy": 2.3242930555070047,
+          "perplexity": 10.219452945517226
+        },
+        "training_loss": [
+          2.2821342945098877,
+          2.2568182945251465,
+          2.2278966903686523,
+          2.1913340091705322,
+          2.1759588718414307,
+          2.131255626678467,
+          2.145059108734131,
+          2.1828463077545166,
+          2.198066234588623,
+          2.0196681022644043,
+          2.2313215732574463,
+          2.1686954498291016,
+          2.0739030838012695,
+          2.028264045715332,
+          1.9343112707138062,
+          1.8830997943878174,
+          1.9996033906936646,
+          1.781435489654541,
+          1.9873192310333252,
+          2.0089352130889893
+        ],
+        "weights_revision": "6d633758416bec7daeab0d1e84ca09366cce2e4abe0cc44ffb2058becdbb8b27"
+      },
+      "task": "digits",
+      "trial": "digits-draw-00-resnet-seed-47"
+    },
+    {
+      "family": "resnet",
+      "method": "kaiming_normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.2604166666666667,
+          "cross_entropy": 2.1105746074549256,
+          "perplexity": 8.252982147495965
+        },
+        "initial": {
+          "accuracy": 0.11458333333333333,
+          "cross_entropy": 2.5620288019468314,
+          "perplexity": 12.962088167063076
+        },
+        "training_loss": [
+          2.593510866165161,
+          2.326699733734131,
+          2.3468947410583496,
+          2.3888683319091797,
+          2.1705753803253174,
+          2.180215358734131,
+          2.26962947845459,
+          2.32606840133667,
+          2.094789981842041,
+          1.926543116569519,
+          2.0950767993927,
+          2.3114593029022217,
+          2.1419451236724854,
+          1.9481732845306396,
+          1.9667739868164062,
+          2.0007553100585938,
+          2.1359543800354004,
+          1.8047122955322266,
+          1.9760115146636963,
+          2.0094211101531982
+        ],
+        "weights_revision": "c27dbd67faa834bf32241c34e320813bfc4c747bca00b5443bb58aefdeab37b0"
+      },
+      "task": "digits",
+      "trial": "digits-draw-00-resnet-seed-47"
+    },
+    {
+      "family": "resnet",
+      "method": "candidate",
+      "metrics": {
+        "final": {
+          "accuracy": 0.21875,
+          "cross_entropy": 2.077665686363489,
+          "perplexity": 7.9858057646536915
+        },
+        "initial": {
+          "accuracy": 0.041666666666666664,
+          "cross_entropy": 2.3242930555070047,
+          "perplexity": 10.219452945517226
+        },
+        "training_loss": [
+          2.2821342945098877,
+          2.2568182945251465,
+          2.2278966903686523,
+          2.1913340091705322,
+          2.1759588718414307,
+          2.131255626678467,
+          2.145059108734131,
+          2.1828463077545166,
+          2.198066234588623,
+          2.0196681022644043,
+          2.2313215732574463,
+          2.1686954498291016,
+          2.0739030838012695,
+          2.028264045715332,
+          1.9343112707138062,
+          1.8830997943878174,
+          1.9996033906936646,
+          1.781435489654541,
+          1.9873192310333252,
+          2.0089352130889893
+        ],
+        "weights_revision": "6d633758416bec7daeab0d1e84ca09366cce2e4abe0cc44ffb2058becdbb8b27"
+      },
+      "task": "digits",
+      "trial": "digits-draw-00-resnet-seed-47"
+    },
+    {
+      "family": "resnet",
+      "method": "normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.17708333333333334,
+          "cross_entropy": 2.5150823681853955,
+          "perplexity": 12.367627436188714
+        },
+        "initial": {
+          "accuracy": 0.07291666666666667,
+          "cross_entropy": 2.7715908024247007,
+          "perplexity": 15.98404124706097
+        },
+        "training_loss": [
+          2.7695181369781494,
+          2.7662715911865234,
+          2.7763121128082275,
+          2.7761027812957764,
+          2.7656991481781006,
+          2.741900682449341,
+          2.7489216327667236,
+          2.7445790767669678,
+          2.720519542694092,
+          2.713292360305786,
+          2.715540885925293,
+          2.6688451766967773,
+          2.580842971801758,
+          2.655182123184204,
+          2.531141519546509,
+          2.7454276084899902,
+          2.478250741958618,
+          2.745037078857422,
+          2.527498245239258,
+          2.6667640209198
+        ],
+        "weights_revision": "999e2380e0783757b0949fe6b4da4a2449211b8e9663ab60dc49b8b1614728e2"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-00-resnet-seed-11"
+    },
+    {
+      "family": "resnet",
+      "method": "xavier_uniform",
+      "metrics": {
+        "final": {
+          "accuracy": 0.14583333333333334,
+          "cross_entropy": 2.6791793106788493,
+          "perplexity": 14.573128375977433
+        },
+        "initial": {
+          "accuracy": 0.010416666666666666,
+          "cross_entropy": 2.869719197819601,
+          "perplexity": 17.632066381944238
+        },
+        "training_loss": [
+          2.854241371154785,
+          2.8231749534606934,
+          2.804100275039673,
+          2.7930150032043457,
+          2.7658824920654297,
+          2.7313990592956543,
+          2.7601702213287354,
+          2.747959613800049,
+          2.7397842407226562,
+          2.7459473609924316,
+          2.7294468879699707,
+          2.7432310581207275,
+          2.685511350631714,
+          2.7088613510131836,
+          2.700345754623413,
+          2.7308244705200195,
+          2.681952476501465,
+          2.7158946990966797,
+          2.6805431842803955,
+          2.731567621231079
+        ],
+        "weights_revision": "178e78b17342cf148a5558d1a50b6e6af53d3ed6f85b8ea34e8690bcb682ff6c"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-00-resnet-seed-11"
+    },
+    {
+      "family": "resnet",
+      "method": "kaiming_normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.3333333333333333,
+          "cross_entropy": 2.4973217436050628,
+          "perplexity": 12.149909772229863
+        },
+        "initial": {
+          "accuracy": 0.052083333333333336,
+          "cross_entropy": 2.7859587043298633,
+          "perplexity": 16.21535615942342
+        },
+        "training_loss": [
+          2.6994516849517822,
+          2.7782187461853027,
+          2.884922504425049,
+          2.806917905807495,
+          2.7809789180755615,
+          2.7196381092071533,
+          2.799734115600586,
+          2.752310037612915,
+          2.7559752464294434,
+          2.7246599197387695,
+          2.662745237350464,
+          2.6711487770080566,
+          2.5769991874694824,
+          2.657075881958008,
+          2.5942046642303467,
+          2.721811294555664,
+          2.56645131111145,
+          2.635329484939575,
+          2.503788471221924,
+          2.5485050678253174
+        ],
+        "weights_revision": "7e7050c87e6e071b0470fba2f0bfa2d0416dabf9e4448e49b3e0337eac677c6e"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-00-resnet-seed-11"
+    },
+    {
+      "family": "resnet",
+      "method": "candidate",
+      "metrics": {
+        "final": {
+          "accuracy": 0.14583333333333334,
+          "cross_entropy": 2.6791793106788493,
+          "perplexity": 14.573128375977433
+        },
+        "initial": {
+          "accuracy": 0.010416666666666666,
+          "cross_entropy": 2.869719197819601,
+          "perplexity": 17.632066381944238
+        },
+        "training_loss": [
+          2.854241371154785,
+          2.8231749534606934,
+          2.804100275039673,
+          2.7930150032043457,
+          2.7658824920654297,
+          2.7313990592956543,
+          2.7601702213287354,
+          2.747959613800049,
+          2.7397842407226562,
+          2.7459473609924316,
+          2.7294468879699707,
+          2.7432310581207275,
+          2.685511350631714,
+          2.7088613510131836,
+          2.700345754623413,
+          2.7308244705200195,
+          2.681952476501465,
+          2.7158946990966797,
+          2.6805431842803955,
+          2.731567621231079
+        ],
+        "weights_revision": "178e78b17342cf148a5558d1a50b6e6af53d3ed6f85b8ea34e8690bcb682ff6c"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-00-resnet-seed-11"
+    },
+    {
+      "family": "resnet",
+      "method": "normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.17708333333333334,
+          "cross_entropy": 2.594497255526607,
+          "perplexity": 13.389853993873052
+        },
+        "initial": {
+          "accuracy": 0.07291666666666667,
+          "cross_entropy": 2.773659876337667,
+          "perplexity": 16.01714764781323
+        },
+        "training_loss": [
+          2.7779204845428467,
+          2.768739938735962,
+          2.7701377868652344,
+          2.774305820465088,
+          2.764930009841919,
+          2.7471258640289307,
+          2.7514171600341797,
+          2.741482734680176,
+          2.7064788341522217,
+          2.709196090698242,
+          2.743701934814453,
+          2.65865159034729,
+          2.52685809135437,
+          2.6020960807800293,
+          2.3936824798583984,
+          2.8393006324768066,
+          2.326693058013916,
+          2.935356855392456,
+          2.729438543319702,
+          2.764564037322998
+        ],
+        "weights_revision": "6bd0ea7f0035f0155ef8d059e4906dc79f6a17d577a3b5eef65d946f597d271e"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-00-resnet-seed-29"
+    },
+    {
+      "family": "resnet",
+      "method": "xavier_uniform",
+      "metrics": {
+        "final": {
+          "accuracy": 0.2604166666666667,
+          "cross_entropy": 2.41015885851872,
+          "perplexity": 11.13573001013622
+        },
+        "initial": {
+          "accuracy": 0.07291666666666667,
+          "cross_entropy": 2.7636271312933265,
+          "perplexity": 15.85725511083017
+        },
+        "training_loss": [
+          2.7637484073638916,
+          2.7709758281707764,
+          2.7884507179260254,
+          2.7858378887176514,
+          2.740103006362915,
+          2.678101062774658,
+          2.693070411682129,
+          2.6767499446868896,
+          2.6351332664489746,
+          2.643031120300293,
+          2.6582679748535156,
+          2.576697826385498,
+          2.3308486938476562,
+          2.5209083557128906,
+          2.4188098907470703,
+          2.633918523788452,
+          2.277165412902832,
+          2.626751661300659,
+          2.4778101444244385,
+          2.569030523300171
+        ],
+        "weights_revision": "41f9f46a819d8cd7e488e810810e2e3852fbddd1ee0ea4e1716e6b4db9f54195"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-00-resnet-seed-29"
+    },
+    {
+      "family": "resnet",
+      "method": "kaiming_normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.17708333333333334,
+          "cross_entropy": 2.5517505893910393,
+          "perplexity": 12.829543398220734
+        },
+        "initial": {
+          "accuracy": 0.0625,
+          "cross_entropy": 2.896771899584659,
+          "perplexity": 18.11557199445984
+        },
+        "training_loss": [
+          3.0911903381347656,
+          2.835139274597168,
+          2.8941211700439453,
+          2.7983555793762207,
+          2.7555413246154785,
+          2.8384251594543457,
+          2.7779600620269775,
+          2.7355284690856934,
+          2.654489040374756,
+          2.614938735961914,
+          2.74251651763916,
+          2.6918234825134277,
+          2.573158025741577,
+          2.575192451477051,
+          2.6214182376861572,
+          2.6662559509277344,
+          2.422828197479248,
+          2.669065237045288,
+          2.55245304107666,
+          2.4924867153167725
+        ],
+        "weights_revision": "3697445e9102ed35507de30998aad0d8e61cfd56da473c19e8dcdfdf12ab3836"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-00-resnet-seed-29"
+    },
+    {
+      "family": "resnet",
+      "method": "candidate",
+      "metrics": {
+        "final": {
+          "accuracy": 0.2604166666666667,
+          "cross_entropy": 2.41015885851872,
+          "perplexity": 11.13573001013622
+        },
+        "initial": {
+          "accuracy": 0.07291666666666667,
+          "cross_entropy": 2.7636271312933265,
+          "perplexity": 15.85725511083017
+        },
+        "training_loss": [
+          2.7637484073638916,
+          2.7709758281707764,
+          2.7884507179260254,
+          2.7858378887176514,
+          2.740103006362915,
+          2.678101062774658,
+          2.693070411682129,
+          2.6767499446868896,
+          2.6351332664489746,
+          2.643031120300293,
+          2.6582679748535156,
+          2.576697826385498,
+          2.3308486938476562,
+          2.5209083557128906,
+          2.4188098907470703,
+          2.633918523788452,
+          2.277165412902832,
+          2.626751661300659,
+          2.4778101444244385,
+          2.569030523300171
+        ],
+        "weights_revision": "41f9f46a819d8cd7e488e810810e2e3852fbddd1ee0ea4e1716e6b4db9f54195"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-00-resnet-seed-29"
+    },
+    {
+      "family": "resnet",
+      "method": "normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.17708333333333334,
+          "cross_entropy": 2.5425592598892806,
+          "perplexity": 12.712163104331019
+        },
+        "initial": {
+          "accuracy": 0.010416666666666666,
+          "cross_entropy": 2.7741019272321914,
+          "perplexity": 16.02422960743664
+        },
+        "training_loss": [
+          2.775876522064209,
+          2.7701141834259033,
+          2.7696380615234375,
+          2.7751083374023438,
+          2.7645535469055176,
+          2.743783712387085,
+          2.7515575885772705,
+          2.738438606262207,
+          2.717118501663208,
+          2.7118163108825684,
+          2.7367658615112305,
+          2.688711404800415,
+          2.5890324115753174,
+          2.6534907817840576,
+          2.5647666454315186,
+          2.7347323894500732,
+          2.497481107711792,
+          2.7099223136901855,
+          2.5735666751861572,
+          2.6403050422668457
+        ],
+        "weights_revision": "697cffa1955e05217439589ec97812b5346a0e049caf027d4dd55d04c86d7c71"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-00-resnet-seed-47"
+    },
+    {
+      "family": "resnet",
+      "method": "xavier_uniform",
+      "metrics": {
+        "final": {
+          "accuracy": 0.16666666666666666,
+          "cross_entropy": 2.4492592686210455,
+          "perplexity": 11.579766045557713
+        },
+        "initial": {
+          "accuracy": 0.07291666666666667,
+          "cross_entropy": 2.785271825082281,
+          "perplexity": 16.204221992137338
+        },
+        "training_loss": [
+          2.7725532054901123,
+          2.764033317565918,
+          2.7976913452148438,
+          2.7234349250793457,
+          2.68739914894104,
+          2.6819891929626465,
+          2.6873044967651367,
+          2.6747660636901855,
+          2.697812795639038,
+          2.692437171936035,
+          2.624417304992676,
+          2.640256881713867,
+          2.250709056854248,
+          2.4347083568573,
+          2.3181638717651367,
+          2.7514357566833496,
+          2.2513532638549805,
+          2.6705474853515625,
+          2.406825542449951,
+          2.610567808151245
+        ],
+        "weights_revision": "0c5f3e7c4f56c96d63a7ef4e172d741d5deb6a4f4ac4b41a849949b079a0153c"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-00-resnet-seed-47"
+    },
+    {
+      "family": "resnet",
+      "method": "kaiming_normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.2604166666666667,
+          "cross_entropy": 2.554954145672673,
+          "perplexity": 12.870709466266039
+        },
+        "initial": {
+          "accuracy": 0.020833333333333332,
+          "cross_entropy": 2.9657075278493585,
+          "perplexity": 19.408430389741934
+        },
+        "training_loss": [
+          3.0409774780273438,
+          2.871555805206299,
+          2.868108034133911,
+          2.849438190460205,
+          2.82834529876709,
+          2.728825092315674,
+          2.7039954662323,
+          2.737464189529419,
+          2.7344560623168945,
+          2.6650753021240234,
+          2.719785690307617,
+          2.6503140926361084,
+          2.5503151416778564,
+          2.5558860301971436,
+          2.6298139095306396,
+          2.701214075088501,
+          2.4604320526123047,
+          2.6322481632232666,
+          2.442622423171997,
+          2.5290746688842773
+        ],
+        "weights_revision": "8a9ed355ae1a4a94bd48b23559052e2a3c432248e27bc901f888fff9ce7a9dcf"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-00-resnet-seed-47"
+    },
+    {
+      "family": "resnet",
+      "method": "candidate",
+      "metrics": {
+        "final": {
+          "accuracy": 0.16666666666666666,
+          "cross_entropy": 2.4492592686210455,
+          "perplexity": 11.579766045557713
+        },
+        "initial": {
+          "accuracy": 0.07291666666666667,
+          "cross_entropy": 2.785271825082281,
+          "perplexity": 16.204221992137338
+        },
+        "training_loss": [
+          2.7725532054901123,
+          2.764033317565918,
+          2.7976913452148438,
+          2.7234349250793457,
+          2.68739914894104,
+          2.6819891929626465,
+          2.6873044967651367,
+          2.6747660636901855,
+          2.697812795639038,
+          2.692437171936035,
+          2.624417304992676,
+          2.640256881713867,
+          2.250709056854248,
+          2.4347083568573,
+          2.3181638717651367,
+          2.7514357566833496,
+          2.2513532638549805,
+          2.6705474853515625,
+          2.406825542449951,
+          2.610567808151245
+        ],
+        "weights_revision": "0c5f3e7c4f56c96d63a7ef4e172d741d5deb6a4f4ac4b41a849949b079a0153c"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-00-resnet-seed-47"
+    },
+    {
+      "family": "cnn",
+      "method": "normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.125,
+          "cross_entropy": 2.183991589051768,
+          "perplexity": 8.881687644931715
+        },
+        "initial": {
+          "accuracy": 0.125,
+          "cross_entropy": 2.302779558050497,
+          "perplexity": 10.001944839660062
+        },
+        "training_loss": [
+          2.305187702178955,
+          2.2916882038116455,
+          2.302264928817749,
+          2.288684844970703,
+          2.276634693145752,
+          2.245993137359619,
+          2.2656784057617188,
+          2.2544572353363037,
+          2.272373914718628,
+          2.147778272628784,
+          2.2429893016815186,
+          2.2834055423736572,
+          2.195760726928711,
+          2.107896089553833,
+          2.1575498580932617,
+          2.058744192123413,
+          2.1627633571624756,
+          1.9524182081222534,
+          2.1539182662963867,
+          2.1252388954162598
+        ],
+        "weights_revision": "6cb761ca251ad7ab2ea1c7e9e59782980e4f9353297e208948bb84cf23df240d"
+      },
+      "task": "digits",
+      "trial": "digits-draw-01-cnn-seed-11"
+    },
+    {
+      "family": "cnn",
+      "method": "xavier_uniform",
+      "metrics": {
+        "final": {
+          "accuracy": 0.1875,
+          "cross_entropy": 2.0021797616949417,
+          "perplexity": 7.405180047175027
+        },
+        "initial": {
+          "accuracy": 0.09375,
+          "cross_entropy": 2.3090235779180777,
+          "perplexity": 10.064592565233713
+        },
+        "training_loss": [
+          2.295153856277466,
+          2.229949712753296,
+          2.250978469848633,
+          2.3096871376037598,
+          2.24338960647583,
+          2.188847541809082,
+          2.1974034309387207,
+          2.189352035522461,
+          2.192186117172241,
+          1.930800437927246,
+          2.1533889770507812,
+          2.1376540660858154,
+          2.0066134929656982,
+          1.9409042596817017,
+          1.9961471557617188,
+          1.7833088636398315,
+          2.031599760055542,
+          1.6437959671020508,
+          1.9617202281951904,
+          1.881234884262085
+        ],
+        "weights_revision": "0fb55c940b94f9ef4deba576a36b71b7186776fd98f2d847e4ee57fa447f96bc"
+      },
+      "task": "digits",
+      "trial": "digits-draw-01-cnn-seed-11"
+    },
+    {
+      "family": "cnn",
+      "method": "kaiming_normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.20833333333333334,
+          "cross_entropy": 1.9013855230082681,
+          "perplexity": 6.695164323193616
+        },
+        "initial": {
+          "accuracy": 0.125,
+          "cross_entropy": 2.377077778727136,
+          "perplexity": 10.773374635596767
+        },
+        "training_loss": [
+          2.46911883354187,
+          2.2377519607543945,
+          2.453925371170044,
+          2.258369207382202,
+          2.2259738445281982,
+          2.1115353107452393,
+          2.106422185897827,
+          2.2405645847320557,
+          2.0852932929992676,
+          1.996010422706604,
+          2.084362506866455,
+          2.0302295684814453,
+          1.8279961347579956,
+          1.8166054487228394,
+          1.7583729028701782,
+          1.7014331817626953,
+          1.8931028842926025,
+          1.5797027349472046,
+          1.7345725297927856,
+          1.7661168575286865
+        ],
+        "weights_revision": "e5ed6eafb2b618c9ec5f0ae38efe27bcb2a6d73c0f10719f07f942283b2c5130"
+      },
+      "task": "digits",
+      "trial": "digits-draw-01-cnn-seed-11"
+    },
+    {
+      "family": "cnn",
+      "method": "candidate",
+      "metrics": {
+        "final": {
+          "accuracy": 0.1875,
+          "cross_entropy": 2.0021797616949417,
+          "perplexity": 7.405180047175027
+        },
+        "initial": {
+          "accuracy": 0.09375,
+          "cross_entropy": 2.3090235779180777,
+          "perplexity": 10.064592565233713
+        },
+        "training_loss": [
+          2.295153856277466,
+          2.229949712753296,
+          2.250978469848633,
+          2.3096871376037598,
+          2.24338960647583,
+          2.188847541809082,
+          2.1974034309387207,
+          2.189352035522461,
+          2.192186117172241,
+          1.930800437927246,
+          2.1533889770507812,
+          2.1376540660858154,
+          2.0066134929656982,
+          1.9409042596817017,
+          1.9961471557617188,
+          1.7833088636398315,
+          2.031599760055542,
+          1.6437959671020508,
+          1.9617202281951904,
+          1.881234884262085
+        ],
+        "weights_revision": "0fb55c940b94f9ef4deba576a36b71b7186776fd98f2d847e4ee57fa447f96bc"
+      },
+      "task": "digits",
+      "trial": "digits-draw-01-cnn-seed-11"
+    },
+    {
+      "family": "cnn",
+      "method": "normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.125,
+          "cross_entropy": 2.1061099669096928,
+          "perplexity": 8.216217679916332
+        },
+        "initial": {
+          "accuracy": 0.14583333333333334,
+          "cross_entropy": 2.303663757331121,
+          "perplexity": 10.010792463046819
+        },
+        "training_loss": [
+          2.30704402923584,
+          2.288991928100586,
+          2.2962653636932373,
+          2.270106315612793,
+          2.248692512512207,
+          2.20747709274292,
+          2.2147655487060547,
+          2.20120906829834,
+          2.2568976879119873,
+          2.051239490509033,
+          2.23807954788208,
+          2.2557928562164307,
+          2.1208126544952393,
+          2.028451919555664,
+          2.0767924785614014,
+          1.9765435457229614,
+          2.132354259490967,
+          1.7792099714279175,
+          2.0416431427001953,
+          2.022205114364624
+        ],
+        "weights_revision": "643740773d878d9c741fdfab279556ccab241608caa790eaa8a982b4b8152094"
+      },
+      "task": "digits",
+      "trial": "digits-draw-01-cnn-seed-29"
+    },
+    {
+      "family": "cnn",
+      "method": "xavier_uniform",
+      "metrics": {
+        "final": {
+          "accuracy": 0.3125,
+          "cross_entropy": 1.9293095642440659,
+          "perplexity": 6.8847551191118175
+        },
+        "initial": {
+          "accuracy": 0.125,
+          "cross_entropy": 2.2899263670922023,
+          "perplexity": 9.874210587566735
+        },
+        "training_loss": [
+          2.3332507610321045,
+          2.1509289741516113,
+          2.273369312286377,
+          2.2332451343536377,
+          2.17606782913208,
+          2.108062505722046,
+          2.0907106399536133,
+          2.1118433475494385,
+          2.1647605895996094,
+          1.878197431564331,
+          1.9958689212799072,
+          2.1778476238250732,
+          1.923717975616455,
+          1.784237027168274,
+          1.7740106582641602,
+          1.6677945852279663,
+          1.9159075021743774,
+          1.57696533203125,
+          1.9226884841918945,
+          1.7620744705200195
+        ],
+        "weights_revision": "98edafcd3e884b9c7fa8ca2273cec080ac05ae6d9ff8242c680a0f5e367332f8"
+      },
+      "task": "digits",
+      "trial": "digits-draw-01-cnn-seed-29"
+    },
+    {
+      "family": "cnn",
+      "method": "kaiming_normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.3125,
+          "cross_entropy": 1.8987800554270196,
+          "perplexity": 6.677742994806903
+        },
+        "initial": {
+          "accuracy": 0.14583333333333334,
+          "cross_entropy": 2.5312035612455017,
+          "perplexity": 12.568624146049649
+        },
+        "training_loss": [
+          2.6438987255096436,
+          2.3799121379852295,
+          2.438375949859619,
+          2.113503932952881,
+          1.991540551185608,
+          1.9641697406768799,
+          1.897993803024292,
+          2.0299322605133057,
+          2.048567533493042,
+          1.8096576929092407,
+          2.0681843757629395,
+          2.0893571376800537,
+          1.8121103048324585,
+          1.6557103395462036,
+          1.7711435556411743,
+          1.6639957427978516,
+          1.8342030048370361,
+          1.3060390949249268,
+          1.5905927419662476,
+          1.48779296875
+        ],
+        "weights_revision": "dd83da89d776ed979a0dee5171e1b563c027b7d4e1cb763decd8a5835754c6d3"
+      },
+      "task": "digits",
+      "trial": "digits-draw-01-cnn-seed-29"
+    },
+    {
+      "family": "cnn",
+      "method": "candidate",
+      "metrics": {
+        "final": {
+          "accuracy": 0.3125,
+          "cross_entropy": 1.9293095642440659,
+          "perplexity": 6.8847551191118175
+        },
+        "initial": {
+          "accuracy": 0.125,
+          "cross_entropy": 2.2899263670922023,
+          "perplexity": 9.874210587566735
+        },
+        "training_loss": [
+          2.3332507610321045,
+          2.1509289741516113,
+          2.273369312286377,
+          2.2332451343536377,
+          2.17606782913208,
+          2.108062505722046,
+          2.0907106399536133,
+          2.1118433475494385,
+          2.1647605895996094,
+          1.878197431564331,
+          1.9958689212799072,
+          2.1778476238250732,
+          1.923717975616455,
+          1.784237027168274,
+          1.7740106582641602,
+          1.6677945852279663,
+          1.9159075021743774,
+          1.57696533203125,
+          1.9226884841918945,
+          1.7620744705200195
+        ],
+        "weights_revision": "98edafcd3e884b9c7fa8ca2273cec080ac05ae6d9ff8242c680a0f5e367332f8"
+      },
+      "task": "digits",
+      "trial": "digits-draw-01-cnn-seed-29"
+    },
+    {
+      "family": "cnn",
+      "method": "normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.125,
+          "cross_entropy": 2.124269082826093,
+          "perplexity": 8.366779829581036
+        },
+        "initial": {
+          "accuracy": 0.16666666666666666,
+          "cross_entropy": 2.3011322623935384,
+          "perplexity": 9.985482242469695
+        },
+        "training_loss": [
+          2.3016843795776367,
+          2.2834253311157227,
+          2.2879819869995117,
+          2.2831356525421143,
+          2.261786460876465,
+          2.214341402053833,
+          2.23067307472229,
+          2.217374086380005,
+          2.271958351135254,
+          2.079275131225586,
+          2.2573349475860596,
+          2.227627754211426,
+          2.1425514221191406,
+          2.042543411254883,
+          2.0678327083587646,
+          1.9689109325408936,
+          2.0662424564361572,
+          1.8335062265396118,
+          2.051098585128784,
+          2.0904412269592285
+        ],
+        "weights_revision": "2f19b294ae6d3376b596e2f65006bb18f1f98a3f29a6d07e27b93cac0035b615"
+      },
+      "task": "digits",
+      "trial": "digits-draw-01-cnn-seed-47"
+    },
+    {
+      "family": "cnn",
+      "method": "xavier_uniform",
+      "metrics": {
+        "final": {
+          "accuracy": 0.16666666666666666,
+          "cross_entropy": 2.082871531272104,
+          "perplexity": 8.027487029903044
+        },
+        "initial": {
+          "accuracy": 0.11458333333333333,
+          "cross_entropy": 2.36696172523856,
+          "perplexity": 10.664939991575926
+        },
+        "training_loss": [
+          2.3964173793792725,
+          2.357988119125366,
+          2.3533213138580322,
+          2.379006862640381,
+          2.315592050552368,
+          2.209758996963501,
+          2.2373275756835938,
+          2.175243854522705,
+          2.2015600204467773,
+          2.0502142906188965,
+          2.1458816528320312,
+          2.2070956230163574,
+          2.140288829803467,
+          2.0090243816375732,
+          2.052659034729004,
+          1.9684396982192993,
+          2.0491878986358643,
+          1.8198703527450562,
+          2.068345546722412,
+          1.9673049449920654
+        ],
+        "weights_revision": "68012eabb4f79cfb4045489f58cf7a12ed41c2804dd6c28b179227423673e8b9"
+      },
+      "task": "digits",
+      "trial": "digits-draw-01-cnn-seed-47"
+    },
+    {
+      "family": "cnn",
+      "method": "kaiming_normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.34375,
+          "cross_entropy": 1.8227426214455429,
+          "perplexity": 6.188808754736883
+        },
+        "initial": {
+          "accuracy": 0.16666666666666666,
+          "cross_entropy": 2.3585058484318777,
+          "perplexity": 10.575138781918245
+        },
+        "training_loss": [
+          2.376169204711914,
+          2.219754695892334,
+          2.189570426940918,
+          2.3398895263671875,
+          2.286668062210083,
+          2.1848983764648438,
+          1.9892323017120361,
+          2.0811562538146973,
+          2.1152870655059814,
+          1.8422304391860962,
+          2.0468993186950684,
+          1.8859002590179443,
+          1.886669635772705,
+          1.7391527891159058,
+          1.6570837497711182,
+          1.4416520595550537,
+          1.7863835096359253,
+          1.4386221170425415,
+          1.6817729473114014,
+          1.7035077810287476
+        ],
+        "weights_revision": "b8a7d701a60213c5bd42f26c6e48455d189b2808d5fa62b9e199d31b566bf44c"
+      },
+      "task": "digits",
+      "trial": "digits-draw-01-cnn-seed-47"
+    },
+    {
+      "family": "cnn",
+      "method": "candidate",
+      "metrics": {
+        "final": {
+          "accuracy": 0.16666666666666666,
+          "cross_entropy": 2.082871531272104,
+          "perplexity": 8.027487029903044
+        },
+        "initial": {
+          "accuracy": 0.11458333333333333,
+          "cross_entropy": 2.36696172523856,
+          "perplexity": 10.664939991575926
+        },
+        "training_loss": [
+          2.3964173793792725,
+          2.357988119125366,
+          2.3533213138580322,
+          2.379006862640381,
+          2.315592050552368,
+          2.209758996963501,
+          2.2373275756835938,
+          2.175243854522705,
+          2.2015600204467773,
+          2.0502142906188965,
+          2.1458816528320312,
+          2.2070956230163574,
+          2.140288829803467,
+          2.0090243816375732,
+          2.052659034729004,
+          1.9684396982192993,
+          2.0491878986358643,
+          1.8198703527450562,
+          2.068345546722412,
+          1.9673049449920654
+        ],
+        "weights_revision": "68012eabb4f79cfb4045489f58cf7a12ed41c2804dd6c28b179227423673e8b9"
+      },
+      "task": "digits",
+      "trial": "digits-draw-01-cnn-seed-47"
+    },
+    {
+      "family": "cnn",
+      "method": "normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.21875,
+          "cross_entropy": 2.4852878090214436,
+          "perplexity": 12.00457478260625
+        },
+        "initial": {
+          "accuracy": 0.11458333333333333,
+          "cross_entropy": 2.7730784821354817,
+          "perplexity": 16.00783807756256
+        },
+        "training_loss": [
+          2.7672698497772217,
+          2.77421498298645,
+          2.7649168968200684,
+          2.7757163047790527,
+          2.7562148571014404,
+          2.730677843093872,
+          2.730679988861084,
+          2.717672824859619,
+          2.670365333557129,
+          2.679579019546509,
+          2.6937637329101562,
+          2.6104912757873535,
+          2.4854323863983154,
+          2.572699785232544,
+          2.4258015155792236,
+          2.736323833465576,
+          2.376258373260498,
+          2.7006046772003174,
+          2.4982004165649414,
+          2.592106342315674
+        ],
+        "weights_revision": "1f29567213db5d3e880fc97e40d74a62f42c89cd70cf73cc1d6843fd06f84e47"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-01-cnn-seed-11"
+    },
+    {
+      "family": "cnn",
+      "method": "xavier_uniform",
+      "metrics": {
+        "final": {
+          "accuracy": 0.21875,
+          "cross_entropy": 2.5021899393994427,
+          "perplexity": 12.20920211816065
+        },
+        "initial": {
+          "accuracy": 0.0625,
+          "cross_entropy": 2.846523254092681,
+          "perplexity": 17.227780980119487
+        },
+        "training_loss": [
+          2.826585292816162,
+          2.8228487968444824,
+          2.833932876586914,
+          2.7711167335510254,
+          2.8057563304901123,
+          2.736682176589966,
+          2.7521660327911377,
+          2.7013094425201416,
+          2.6898117065429688,
+          2.687932252883911,
+          2.7020716667175293,
+          2.664503335952759,
+          2.5501601696014404,
+          2.6136422157287598,
+          2.5409135818481445,
+          2.6391890048980713,
+          2.497647523880005,
+          2.5562117099761963,
+          2.461554527282715,
+          2.5116968154907227
+        ],
+        "weights_revision": "d8841afdb7613af86fa9d26cc50c756bd16459564e7c8c021d4ee74611a01f79"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-01-cnn-seed-11"
+    },
+    {
+      "family": "cnn",
+      "method": "kaiming_normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.3229166666666667,
+          "cross_entropy": 2.3006120086400217,
+          "perplexity": 9.980288608973181
+        },
+        "initial": {
+          "accuracy": 0.11458333333333333,
+          "cross_entropy": 2.8378361519022524,
+          "perplexity": 17.078769661609574
+        },
+        "training_loss": [
+          2.639137029647827,
+          2.961608409881592,
+          2.682187080383301,
+          2.8498942852020264,
+          2.7418112754821777,
+          2.8550610542297363,
+          2.726389169692993,
+          2.678575277328491,
+          2.4570062160491943,
+          2.642461061477661,
+          2.5412304401397705,
+          2.388984441757202,
+          2.450338840484619,
+          2.5131049156188965,
+          2.3113231658935547,
+          2.511788845062256,
+          2.3818321228027344,
+          2.57650089263916,
+          2.1942191123962402,
+          2.2749879360198975
+        ],
+        "weights_revision": "9ff5768f3065af619bd2c911414b317876116aa07c9f3e986bd0be391a488a37"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-01-cnn-seed-11"
+    },
+    {
+      "family": "cnn",
+      "method": "candidate",
+      "metrics": {
+        "final": {
+          "accuracy": 0.21875,
+          "cross_entropy": 2.5021899393994427,
+          "perplexity": 12.20920211816065
+        },
+        "initial": {
+          "accuracy": 0.0625,
+          "cross_entropy": 2.846523254092681,
+          "perplexity": 17.227780980119487
+        },
+        "training_loss": [
+          2.826585292816162,
+          2.8228487968444824,
+          2.833932876586914,
+          2.7711167335510254,
+          2.8057563304901123,
+          2.736682176589966,
+          2.7521660327911377,
+          2.7013094425201416,
+          2.6898117065429688,
+          2.687932252883911,
+          2.7020716667175293,
+          2.664503335952759,
+          2.5501601696014404,
+          2.6136422157287598,
+          2.5409135818481445,
+          2.6391890048980713,
+          2.497647523880005,
+          2.5562117099761963,
+          2.461554527282715,
+          2.5116968154907227
+        ],
+        "weights_revision": "d8841afdb7613af86fa9d26cc50c756bd16459564e7c8c021d4ee74611a01f79"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-01-cnn-seed-11"
+    },
+    {
+      "family": "cnn",
+      "method": "normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.17708333333333334,
+          "cross_entropy": 2.507601158292807,
+          "perplexity": 12.275447856784925
+        },
+        "initial": {
+          "accuracy": 0.0625,
+          "cross_entropy": 2.7706607306666164,
+          "perplexity": 15.96918185293959
+        },
+        "training_loss": [
+          2.7739975452423096,
+          2.7610509395599365,
+          2.7800068855285645,
+          2.7747550010681152,
+          2.757322311401367,
+          2.726057291030884,
+          2.7390615940093994,
+          2.7235629558563232,
+          2.691317558288574,
+          2.691657304763794,
+          2.7091028690338135,
+          2.637564182281494,
+          2.4584357738494873,
+          2.589570999145508,
+          2.4721550941467285,
+          2.7278201580047607,
+          2.3616199493408203,
+          2.692883253097534,
+          2.5582380294799805,
+          2.6204335689544678
+        ],
+        "weights_revision": "f2c253bb89c9ba6424dd1b460f90c36695cbb683f60bfc77885a761d77c6aeee"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-01-cnn-seed-29"
+    },
+    {
+      "family": "cnn",
+      "method": "xavier_uniform",
+      "metrics": {
+        "final": {
+          "accuracy": 0.3020833333333333,
+          "cross_entropy": 2.343768335925864,
+          "perplexity": 10.420430350725296
+        },
+        "initial": {
+          "accuracy": 0.07291666666666667,
+          "cross_entropy": 2.7490215572570222,
+          "perplexity": 15.627333949836895
+        },
+        "training_loss": [
+          2.7130846977233887,
+          2.764404535293579,
+          2.773998975753784,
+          2.7592504024505615,
+          2.708768367767334,
+          2.693103313446045,
+          2.6689000129699707,
+          2.6721866130828857,
+          2.5886380672454834,
+          2.6547279357910156,
+          2.6202569007873535,
+          2.522008180618286,
+          2.344507932662964,
+          2.4557297229766846,
+          2.399261713027954,
+          2.588027000427246,
+          2.1672372817993164,
+          2.5656778812408447,
+          2.3950467109680176,
+          2.406294822692871
+        ],
+        "weights_revision": "22bf5a722e3e7320a303ccffe7324dab9d699c5241a4a77162df689154bfc569"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-01-cnn-seed-29"
+    },
+    {
+      "family": "cnn",
+      "method": "kaiming_normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.3333333333333333,
+          "cross_entropy": 2.314485535242609,
+          "perplexity": 10.119715342402419
+        },
+        "initial": {
+          "accuracy": 0.0625,
+          "cross_entropy": 2.7666827485732326,
+          "perplexity": 15.9057829170024
+        },
+        "training_loss": [
+          2.8631794452667236,
+          2.701317310333252,
+          2.988391399383545,
+          2.8228883743286133,
+          2.806487560272217,
+          2.478175163269043,
+          2.7290735244750977,
+          2.610044240951538,
+          2.6005380153656006,
+          2.6174070835113525,
+          2.5889322757720947,
+          2.503060817718506,
+          1.8812552690505981,
+          2.529531717300415,
+          2.4054765701293945,
+          2.549584150314331,
+          2.052544593811035,
+          2.4157869815826416,
+          2.292436122894287,
+          2.3782591819763184
+        ],
+        "weights_revision": "567cebe823d0e1a1168fac0a527888df12c6fe67fa0909a1e76086b9d1be591c"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-01-cnn-seed-29"
+    },
+    {
+      "family": "cnn",
+      "method": "candidate",
+      "metrics": {
+        "final": {
+          "accuracy": 0.3020833333333333,
+          "cross_entropy": 2.343768335925864,
+          "perplexity": 10.420430350725296
+        },
+        "initial": {
+          "accuracy": 0.07291666666666667,
+          "cross_entropy": 2.7490215572570222,
+          "perplexity": 15.627333949836895
+        },
+        "training_loss": [
+          2.7130846977233887,
+          2.764404535293579,
+          2.773998975753784,
+          2.7592504024505615,
+          2.708768367767334,
+          2.693103313446045,
+          2.6689000129699707,
+          2.6721866130828857,
+          2.5886380672454834,
+          2.6547279357910156,
+          2.6202569007873535,
+          2.522008180618286,
+          2.344507932662964,
+          2.4557297229766846,
+          2.399261713027954,
+          2.588027000427246,
+          2.1672372817993164,
+          2.5656778812408447,
+          2.3950467109680176,
+          2.406294822692871
+        ],
+        "weights_revision": "22bf5a722e3e7320a303ccffe7324dab9d699c5241a4a77162df689154bfc569"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-01-cnn-seed-29"
+    },
+    {
+      "family": "cnn",
+      "method": "normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.22916666666666666,
+          "cross_entropy": 2.480564203641142,
+          "perplexity": 11.948003623676954
+        },
+        "initial": {
+          "accuracy": 0.07291666666666667,
+          "cross_entropy": 2.770273322036697,
+          "perplexity": 15.962996452293162
+        },
+        "training_loss": [
+          2.773061513900757,
+          2.768220901489258,
+          2.767369031906128,
+          2.7667746543884277,
+          2.7558202743530273,
+          2.7249202728271484,
+          2.7338414192199707,
+          2.7102208137512207,
+          2.674760580062866,
+          2.6845955848693848,
+          2.6921043395996094,
+          2.6104519367218018,
+          2.4521968364715576,
+          2.5733394622802734,
+          2.4256043434143066,
+          2.7131285667419434,
+          2.3851218223571777,
+          2.703197956085205,
+          2.4837887287139893,
+          2.6126527786254883
+        ],
+        "weights_revision": "d388bd0798a5eef56d40add0e2f0a03a1cf08d769a6b6f5e54c81c9ee0d06128"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-01-cnn-seed-47"
+    },
+    {
+      "family": "cnn",
+      "method": "xavier_uniform",
+      "metrics": {
+        "final": {
+          "accuracy": 0.34375,
+          "cross_entropy": 2.400195521199851,
+          "perplexity": 11.025331856027414
+        },
+        "initial": {
+          "accuracy": 0.041666666666666664,
+          "cross_entropy": 2.804587898788172,
+          "perplexity": 16.520266481236277
+        },
+        "training_loss": [
+          2.8068623542785645,
+          2.7726588249206543,
+          2.8598668575286865,
+          2.772120237350464,
+          2.7356066703796387,
+          2.7041544914245605,
+          2.731205701828003,
+          2.68062162399292,
+          2.6900806427001953,
+          2.6352126598358154,
+          2.6111831665039062,
+          2.628939628601074,
+          2.412179470062256,
+          2.5096378326416016,
+          2.4765501022338867,
+          2.6337687969207764,
+          2.3618767261505127,
+          2.4923324584960938,
+          2.4315152168273926,
+          2.4193434715270996
+        ],
+        "weights_revision": "eed69c48ca1e851227b8ca2ced2121dec557957344f05c4e8ff5c8eda1a4c433"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-01-cnn-seed-47"
+    },
+    {
+      "family": "cnn",
+      "method": "kaiming_normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.3541666666666667,
+          "cross_entropy": 2.2486920922061517,
+          "perplexity": 9.475334864144067
+        },
+        "initial": {
+          "accuracy": 0.07291666666666667,
+          "cross_entropy": 2.7698997551386277,
+          "perplexity": 15.95703431892176
+        },
+        "training_loss": [
+          2.8502299785614014,
+          2.81644606590271,
+          2.7528223991394043,
+          2.7274599075317383,
+          2.6918468475341797,
+          2.626542091369629,
+          2.742938280105591,
+          2.6247575283050537,
+          2.543424367904663,
+          2.6752946376800537,
+          2.591395616531372,
+          2.3103086948394775,
+          1.9649534225463867,
+          2.3814947605133057,
+          2.2940828800201416,
+          2.5948736667633057,
+          2.154874086380005,
+          2.3250439167022705,
+          2.026569128036499,
+          2.337075710296631
+        ],
+        "weights_revision": "0780b64225215bdac755d3fad9228c9cee9a5f2d4cabe432be30f2703b4f0194"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-01-cnn-seed-47"
+    },
+    {
+      "family": "cnn",
+      "method": "candidate",
+      "metrics": {
+        "final": {
+          "accuracy": 0.34375,
+          "cross_entropy": 2.400195521199851,
+          "perplexity": 11.025331856027414
+        },
+        "initial": {
+          "accuracy": 0.041666666666666664,
+          "cross_entropy": 2.804587898788172,
+          "perplexity": 16.520266481236277
+        },
+        "training_loss": [
+          2.8068623542785645,
+          2.7726588249206543,
+          2.8598668575286865,
+          2.772120237350464,
+          2.7356066703796387,
+          2.7041544914245605,
+          2.731205701828003,
+          2.68062162399292,
+          2.6900806427001953,
+          2.6352126598358154,
+          2.6111831665039062,
+          2.628939628601074,
+          2.412179470062256,
+          2.5096378326416016,
+          2.4765501022338867,
+          2.6337687969207764,
+          2.3618767261505127,
+          2.4923324584960938,
+          2.4315152168273926,
+          2.4193434715270996
+        ],
+        "weights_revision": "eed69c48ca1e851227b8ca2ced2121dec557957344f05c4e8ff5c8eda1a4c433"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-01-cnn-seed-47"
+    },
+    {
+      "family": "mlp",
+      "method": "normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.16666666666666666,
+          "cross_entropy": 2.1323922314297157,
+          "perplexity": 8.435021217693784
+        },
+        "initial": {
+          "accuracy": 0.11458333333333333,
+          "cross_entropy": 2.3022864267150367,
+          "perplexity": 9.997013783173243
+        },
+        "training_loss": [
+          2.2973570823669434,
+          2.2745046615600586,
+          2.278242349624634,
+          2.2644271850585938,
+          2.229388475418091,
+          2.16731333732605,
+          2.2267942428588867,
+          2.221383571624756,
+          2.304039716720581,
+          2.039273262023926,
+          2.2686960697174072,
+          2.2562031745910645,
+          2.157731771469116,
+          2.051203966140747,
+          2.106295108795166,
+          1.972220778465271,
+          2.058260202407837,
+          1.888916254043579,
+          2.077324151992798,
+          2.0950748920440674
+        ],
+        "weights_revision": "3636f71893a67961ec304241f66c16631bc6d6a752a7abcfabc4f15cad53d9d1"
+      },
+      "task": "digits",
+      "trial": "digits-draw-02-mlp-seed-11"
+    },
+    {
+      "family": "mlp",
+      "method": "xavier_uniform",
+      "metrics": {
+        "final": {
+          "accuracy": 0.3854166666666667,
+          "cross_entropy": 1.7745212166339153,
+          "perplexity": 5.89745685601889
+        },
+        "initial": {
+          "accuracy": 0.13541666666666666,
+          "cross_entropy": 2.407948121119617,
+          "perplexity": 11.111139027454461
+        },
+        "training_loss": [
+          2.188580274581909,
+          2.2827680110931396,
+          2.301548719406128,
+          2.215101718902588,
+          2.2104268074035645,
+          2.026808023452759,
+          2.20802640914917,
+          1.9424837827682495,
+          2.149091958999634,
+          1.7270110845565796,
+          1.9462616443634033,
+          2.0415234565734863,
+          1.884732723236084,
+          1.7505375146865845,
+          1.7993782758712769,
+          1.579055905342102,
+          1.884705662727356,
+          1.5189528465270996,
+          1.829524278640747,
+          1.7348918914794922
+        ],
+        "weights_revision": "b07a91b6d4c79763ac15ddc51ee40b8358d1ded2eb6067eaf13193dcbbe982bb"
+      },
+      "task": "digits",
+      "trial": "digits-draw-02-mlp-seed-11"
+    },
+    {
+      "family": "mlp",
+      "method": "kaiming_normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.4375,
+          "cross_entropy": 1.7416421206984527,
+          "perplexity": 5.70670683405429
+        },
+        "initial": {
+          "accuracy": 0.11458333333333333,
+          "cross_entropy": 2.4384832368282905,
+          "perplexity": 11.45565204772844
+        },
+        "training_loss": [
+          2.312105655670166,
+          2.2478723526000977,
+          2.2975335121154785,
+          2.250234365463257,
+          2.132235050201416,
+          2.0294196605682373,
+          2.1681346893310547,
+          2.0615410804748535,
+          2.273983955383301,
+          1.898608684539795,
+          2.0567357540130615,
+          1.8172516822814941,
+          1.7315468788146973,
+          1.7954298257827759,
+          1.7524152994155884,
+          1.6261656284332275,
+          1.6956477165222168,
+          1.6361786127090454,
+          1.5772590637207031,
+          1.6480982303619385
+        ],
+        "weights_revision": "2d65c9e56fbe63d555f85130c7e5bbddafb8e69ba486fdd6ca9a9da60f4f5ce5"
+      },
+      "task": "digits",
+      "trial": "digits-draw-02-mlp-seed-11"
+    },
+    {
+      "family": "mlp",
+      "method": "candidate",
+      "metrics": {
+        "final": {
+          "accuracy": 0.3854166666666667,
+          "cross_entropy": 1.7745212166339153,
+          "perplexity": 5.89745685601889
+        },
+        "initial": {
+          "accuracy": 0.13541666666666666,
+          "cross_entropy": 2.407948121119617,
+          "perplexity": 11.111139027454461
+        },
+        "training_loss": [
+          2.188580274581909,
+          2.2827680110931396,
+          2.301548719406128,
+          2.215101718902588,
+          2.2104268074035645,
+          2.026808023452759,
+          2.20802640914917,
+          1.9424837827682495,
+          2.149091958999634,
+          1.7270110845565796,
+          1.9462616443634033,
+          2.0415234565734863,
+          1.884732723236084,
+          1.7505375146865845,
+          1.7993782758712769,
+          1.579055905342102,
+          1.884705662727356,
+          1.5189528465270996,
+          1.829524278640747,
+          1.7348918914794922
+        ],
+        "weights_revision": "b07a91b6d4c79763ac15ddc51ee40b8358d1ded2eb6067eaf13193dcbbe982bb"
+      },
+      "task": "digits",
+      "trial": "digits-draw-02-mlp-seed-11"
+    },
+    {
+      "family": "mlp",
+      "method": "normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.19791666666666666,
+          "cross_entropy": 2.0479955971771053,
+          "perplexity": 7.75234669725968
+        },
+        "initial": {
+          "accuracy": 0.020833333333333332,
+          "cross_entropy": 2.3059366354941724,
+          "perplexity": 10.033571651985078
+        },
+        "training_loss": [
+          2.305035352706909,
+          2.2807650566101074,
+          2.3009655475616455,
+          2.270439624786377,
+          2.2430355548858643,
+          2.178633213043213,
+          2.181093454360962,
+          2.165743350982666,
+          2.324814558029175,
+          2.0270824432373047,
+          2.233847141265869,
+          2.2024176120758057,
+          2.1117959022521973,
+          2.0232837200164795,
+          2.032684803009033,
+          1.9727978706359863,
+          2.056830644607544,
+          1.785281777381897,
+          1.9632220268249512,
+          2.001469373703003
+        ],
+        "weights_revision": "dde6d8400e372043fcdb3388391f1cd61124e7908f66ca9476e7db3521ee818b"
+      },
+      "task": "digits",
+      "trial": "digits-draw-02-mlp-seed-29"
+    },
+    {
+      "family": "mlp",
+      "method": "xavier_uniform",
+      "metrics": {
+        "final": {
+          "accuracy": 0.1875,
+          "cross_entropy": 1.9433387883456599,
+          "perplexity": 6.982023596845653
+        },
+        "initial": {
+          "accuracy": 0.13541666666666666,
+          "cross_entropy": 2.2829574830244566,
+          "perplexity": 9.805637574931534
+        },
+        "training_loss": [
+          2.2995831966400146,
+          2.2949483394622803,
+          2.249943494796753,
+          2.176985263824463,
+          2.138964891433716,
+          2.114213705062866,
+          2.232856273651123,
+          2.0763325691223145,
+          2.2217013835906982,
+          1.9181067943572998,
+          2.121579647064209,
+          2.2086851596832275,
+          2.024709701538086,
+          1.9629396200180054,
+          1.8525211811065674,
+          1.6935577392578125,
+          2.0754714012145996,
+          1.619282841682434,
+          1.850469708442688,
+          1.8214830160140991
+        ],
+        "weights_revision": "e574e34edcc7eabecee42f4a2838b9323c0d60430f05d139cb6b8b7a9250637d"
+      },
+      "task": "digits",
+      "trial": "digits-draw-02-mlp-seed-29"
+    },
+    {
+      "family": "mlp",
+      "method": "kaiming_normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.4895833333333333,
+          "cross_entropy": 1.6892072210721594,
+          "perplexity": 5.41518595764593
+        },
+        "initial": {
+          "accuracy": 0.020833333333333332,
+          "cross_entropy": 2.4916302602396216,
+          "perplexity": 12.08095517597537
+        },
+        "training_loss": [
+          2.4928641319274902,
+          2.286809206008911,
+          2.501798629760742,
+          2.2242963314056396,
+          2.1742639541625977,
+          2.1493470668792725,
+          2.0441842079162598,
+          1.9959217309951782,
+          2.2890727519989014,
+          1.966727614402771,
+          2.171180486679077,
+          1.659180998802185,
+          1.8597837686538696,
+          1.774383306503296,
+          1.6625593900680542,
+          1.5540739297866821,
+          1.6778823137283325,
+          1.6338080167770386,
+          1.620493769645691,
+          1.5278775691986084
+        ],
+        "weights_revision": "c355494cd34ee2acca313726f95ed43b97304b8fe96925838dacbd7b92dbabaa"
+      },
+      "task": "digits",
+      "trial": "digits-draw-02-mlp-seed-29"
+    },
+    {
+      "family": "mlp",
+      "method": "candidate",
+      "metrics": {
+        "final": {
+          "accuracy": 0.1875,
+          "cross_entropy": 1.9433387883456599,
+          "perplexity": 6.982023596845653
+        },
+        "initial": {
+          "accuracy": 0.13541666666666666,
+          "cross_entropy": 2.2829574830244566,
+          "perplexity": 9.805637574931534
+        },
+        "training_loss": [
+          2.2995831966400146,
+          2.2949483394622803,
+          2.249943494796753,
+          2.176985263824463,
+          2.138964891433716,
+          2.114213705062866,
+          2.232856273651123,
+          2.0763325691223145,
+          2.2217013835906982,
+          1.9181067943572998,
+          2.121579647064209,
+          2.2086851596832275,
+          2.024709701538086,
+          1.9629396200180054,
+          1.8525211811065674,
+          1.6935577392578125,
+          2.0754714012145996,
+          1.619282841682434,
+          1.850469708442688,
+          1.8214830160140991
+        ],
+        "weights_revision": "e574e34edcc7eabecee42f4a2838b9323c0d60430f05d139cb6b8b7a9250637d"
+      },
+      "task": "digits",
+      "trial": "digits-draw-02-mlp-seed-29"
+    },
+    {
+      "family": "mlp",
+      "method": "normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.21875,
+          "cross_entropy": 2.0185275669249862,
+          "perplexity": 7.527233422457293
+        },
+        "initial": {
+          "accuracy": 0.0625,
+          "cross_entropy": 2.297704272160795,
+          "perplexity": 9.95131071017555
+        },
+        "training_loss": [
+          2.304377794265747,
+          2.2679696083068848,
+          2.2887144088745117,
+          2.2819783687591553,
+          2.2588744163513184,
+          2.19876766204834,
+          2.1723997592926025,
+          2.1915781497955322,
+          2.248628854751587,
+          2.0371479988098145,
+          2.1519150733947754,
+          2.1256208419799805,
+          2.0430896282196045,
+          1.9364123344421387,
+          1.9839969873428345,
+          1.8391799926757812,
+          1.9840424060821533,
+          1.7399643659591675,
+          1.9391422271728516,
+          1.9328123331069946
+        ],
+        "weights_revision": "15855736c59c77b9b21c3920ed74b60eb30a7818a4acbfb56b4fefdb75e4c22e"
+      },
+      "task": "digits",
+      "trial": "digits-draw-02-mlp-seed-47"
+    },
+    {
+      "family": "mlp",
+      "method": "xavier_uniform",
+      "metrics": {
+        "final": {
+          "accuracy": 0.34375,
+          "cross_entropy": 1.8494802204570255,
+          "perplexity": 6.356514677486821
+        },
+        "initial": {
+          "accuracy": 0.125,
+          "cross_entropy": 2.3958075170159936,
+          "perplexity": 10.97705864270245
+        },
+        "training_loss": [
+          2.403951644897461,
+          2.256502866744995,
+          2.357822895050049,
+          2.4230120182037354,
+          2.231482982635498,
+          2.256558895111084,
+          2.1581480503082275,
+          2.300157308578491,
+          2.0906617641448975,
+          1.8764455318450928,
+          1.9996693134307861,
+          2.041161298751831,
+          1.943030595779419,
+          1.7499587535858154,
+          1.761797308921814,
+          1.6766750812530518,
+          1.8605213165283203,
+          1.5157424211502075,
+          1.694240927696228,
+          1.561196208000183
+        ],
+        "weights_revision": "1d90885e8388f1e29264aac4ddb94ec45d24369501189d28caa92f23ec82319a"
+      },
+      "task": "digits",
+      "trial": "digits-draw-02-mlp-seed-47"
+    },
+    {
+      "family": "mlp",
+      "method": "kaiming_normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.5104166666666666,
+          "cross_entropy": 1.63230855581211,
+          "perplexity": 5.115670909025628
+        },
+        "initial": {
+          "accuracy": 0.0625,
+          "cross_entropy": 2.324312605235734,
+          "perplexity": 10.21965273500298
+        },
+        "training_loss": [
+          2.4976136684417725,
+          2.0393776893615723,
+          2.192352294921875,
+          2.3158228397369385,
+          2.1012187004089355,
+          1.9734687805175781,
+          1.840522050857544,
+          1.9371185302734375,
+          2.0748322010040283,
+          1.9048595428466797,
+          2.001398801803589,
+          1.6097087860107422,
+          1.7225171327590942,
+          1.598864197731018,
+          1.5598249435424805,
+          1.3314454555511475,
+          1.5698360204696655,
+          1.4953081607818604,
+          1.5972568988800049,
+          1.4009792804718018
+        ],
+        "weights_revision": "4056138322c27ebf89684390fd31bc1e4f0b8baa5b2cc70d9d77ffce9992512e"
+      },
+      "task": "digits",
+      "trial": "digits-draw-02-mlp-seed-47"
+    },
+    {
+      "family": "mlp",
+      "method": "candidate",
+      "metrics": {
+        "final": {
+          "accuracy": 0.34375,
+          "cross_entropy": 1.8494802204570255,
+          "perplexity": 6.356514677486821
+        },
+        "initial": {
+          "accuracy": 0.125,
+          "cross_entropy": 2.3958075170159936,
+          "perplexity": 10.97705864270245
+        },
+        "training_loss": [
+          2.403951644897461,
+          2.256502866744995,
+          2.357822895050049,
+          2.4230120182037354,
+          2.231482982635498,
+          2.256558895111084,
+          2.1581480503082275,
+          2.300157308578491,
+          2.0906617641448975,
+          1.8764455318450928,
+          1.9996693134307861,
+          2.041161298751831,
+          1.943030595779419,
+          1.7499587535858154,
+          1.761797308921814,
+          1.6766750812530518,
+          1.8605213165283203,
+          1.5157424211502075,
+          1.694240927696228,
+          1.561196208000183
+        ],
+        "weights_revision": "1d90885e8388f1e29264aac4ddb94ec45d24369501189d28caa92f23ec82319a"
+      },
+      "task": "digits",
+      "trial": "digits-draw-02-mlp-seed-47"
+    },
+    {
+      "family": "mlp",
+      "method": "normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.2708333333333333,
+          "cross_entropy": 2.4690946515612406,
+          "perplexity": 11.81174826155359
+        },
+        "initial": {
+          "accuracy": 0.020833333333333332,
+          "cross_entropy": 2.775139416455867,
+          "perplexity": 16.0408632000666
+        },
+        "training_loss": [
+          2.7737393379211426,
+          2.7643680572509766,
+          2.76877760887146,
+          2.776923179626465,
+          2.7529876232147217,
+          2.7187373638153076,
+          2.7322473526000977,
+          2.726989269256592,
+          2.6945009231567383,
+          2.692990779876709,
+          2.68719482421875,
+          2.6355855464935303,
+          2.5450637340545654,
+          2.6086435317993164,
+          2.5335094928741455,
+          2.664580821990967,
+          2.4354259967803955,
+          2.6050264835357666,
+          2.4493589401245117,
+          2.4967575073242188
+        ],
+        "weights_revision": "1f611cb5d80af7e0c97d3b847ff39c09778747b0abd7548cfc37643d6be60ce2"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-02-mlp-seed-11"
+    },
+    {
+      "family": "mlp",
+      "method": "xavier_uniform",
+      "metrics": {
+        "final": {
+          "accuracy": 0.2916666666666667,
+          "cross_entropy": 2.405374142511692,
+          "perplexity": 11.08257596940836
+        },
+        "initial": {
+          "accuracy": 0.125,
+          "cross_entropy": 2.744237380519218,
+          "perplexity": 15.552748579338713
+        },
+        "training_loss": [
+          2.6680049896240234,
+          2.5936074256896973,
+          2.802676200866699,
+          2.891907215118408,
+          2.7019450664520264,
+          2.573789358139038,
+          2.6953630447387695,
+          2.7031006813049316,
+          2.501311779022217,
+          2.61179518699646,
+          2.5232279300689697,
+          2.5100414752960205,
+          2.3414037227630615,
+          2.457688331604004,
+          2.31532883644104,
+          2.5187599658966064,
+          2.2983431816101074,
+          2.4717295169830322,
+          2.2171080112457275,
+          2.2962331771850586
+        ],
+        "weights_revision": "f7e78f9ace1100845f818a09cf1094a155552ceb0ae2791964f5591dc864dfad"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-02-mlp-seed-11"
+    },
+    {
+      "family": "mlp",
+      "method": "kaiming_normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.3229166666666667,
+          "cross_entropy": 2.447278836448438,
+          "perplexity": 11.556855797913625
+        },
+        "initial": {
+          "accuracy": 0.020833333333333332,
+          "cross_entropy": 2.880253101113247,
+          "perplexity": 17.8187825626265
+        },
+        "training_loss": [
+          2.8500866889953613,
+          2.7406835556030273,
+          2.809908390045166,
+          2.8450372219085693,
+          2.7882306575775146,
+          2.623837947845459,
+          2.7080821990966797,
+          2.7470180988311768,
+          2.645568370819092,
+          2.6197774410247803,
+          2.4084222316741943,
+          2.4140892028808594,
+          2.2801573276519775,
+          2.4500555992126465,
+          2.450803518295288,
+          2.5955095291137695,
+          2.2306878566741943,
+          2.3920862674713135,
+          2.290323495864868,
+          2.3261289596557617
+        ],
+        "weights_revision": "ee352407251613b7c80b4f832fa086c82a97a96fac7b6d18d2961650e0f8997d"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-02-mlp-seed-11"
+    },
+    {
+      "family": "mlp",
+      "method": "candidate",
+      "metrics": {
+        "final": {
+          "accuracy": 0.2916666666666667,
+          "cross_entropy": 2.405374142511692,
+          "perplexity": 11.08257596940836
+        },
+        "initial": {
+          "accuracy": 0.125,
+          "cross_entropy": 2.744237380519218,
+          "perplexity": 15.552748579338713
+        },
+        "training_loss": [
+          2.6680049896240234,
+          2.5936074256896973,
+          2.802676200866699,
+          2.891907215118408,
+          2.7019450664520264,
+          2.573789358139038,
+          2.6953630447387695,
+          2.7031006813049316,
+          2.501311779022217,
+          2.61179518699646,
+          2.5232279300689697,
+          2.5100414752960205,
+          2.3414037227630615,
+          2.457688331604004,
+          2.31532883644104,
+          2.5187599658966064,
+          2.2983431816101074,
+          2.4717295169830322,
+          2.2171080112457275,
+          2.2962331771850586
+        ],
+        "weights_revision": "f7e78f9ace1100845f818a09cf1094a155552ceb0ae2791964f5591dc864dfad"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-02-mlp-seed-11"
+    },
+    {
+      "family": "mlp",
+      "method": "normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.19791666666666666,
+          "cross_entropy": 2.435210691825432,
+          "perplexity": 11.418224186448322
+        },
+        "initial": {
+          "accuracy": 0.041666666666666664,
+          "cross_entropy": 2.7737183641435514,
+          "perplexity": 16.018084483032123
+        },
+        "training_loss": [
+          2.773808002471924,
+          2.7673401832580566,
+          2.7593538761138916,
+          2.7713160514831543,
+          2.7529282569885254,
+          2.7203876972198486,
+          2.7243576049804688,
+          2.716153860092163,
+          2.667418956756592,
+          2.6878840923309326,
+          2.6927871704101562,
+          2.607729196548462,
+          2.4729013442993164,
+          2.6016931533813477,
+          2.4880528450012207,
+          2.654545783996582,
+          2.348569393157959,
+          2.59860897064209,
+          2.4637343883514404,
+          2.495750904083252
+        ],
+        "weights_revision": "ce907aa4b74f3d0dbc0b2177c25a83bcf9d2913ac8a5b0f9116e5ea0a6cbd975"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-02-mlp-seed-29"
+    },
+    {
+      "family": "mlp",
+      "method": "xavier_uniform",
+      "metrics": {
+        "final": {
+          "accuracy": 0.28125,
+          "cross_entropy": 2.414722193092117,
+          "perplexity": 11.186662193804425
+        },
+        "initial": {
+          "accuracy": 0.03125,
+          "cross_entropy": 2.803620846113486,
+          "perplexity": 16.504298235660812
+        },
+        "training_loss": [
+          2.762233018875122,
+          2.739311933517456,
+          2.759519338607788,
+          2.731623411178589,
+          2.737128734588623,
+          2.6581575870513916,
+          2.6815969944000244,
+          2.617335081100464,
+          2.5627949237823486,
+          2.5835211277008057,
+          2.586327075958252,
+          2.462855577468872,
+          2.236867904663086,
+          2.4682891368865967,
+          2.291482448577881,
+          2.571469783782959,
+          2.1929163932800293,
+          2.404262065887451,
+          2.285637617111206,
+          2.2635011672973633
+        ],
+        "weights_revision": "f8e359193796167f58701183676f76858536e282582ef6a198cd2d206e652ba7"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-02-mlp-seed-29"
+    },
+    {
+      "family": "mlp",
+      "method": "kaiming_normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.3541666666666667,
+          "cross_entropy": 2.3996693641715026,
+          "perplexity": 11.019532326047017
+        },
+        "initial": {
+          "accuracy": 0.041666666666666664,
+          "cross_entropy": 2.849207069788475,
+          "perplexity": 17.27407926936528
+        },
+        "training_loss": [
+          2.8565940856933594,
+          2.829073905944824,
+          2.7791061401367188,
+          2.7727835178375244,
+          2.750354290008545,
+          2.666748523712158,
+          2.6204004287719727,
+          2.619454860687256,
+          2.5257043838500977,
+          2.617690324783325,
+          2.553201913833618,
+          2.427600145339966,
+          2.3115084171295166,
+          2.4881863594055176,
+          2.309492826461792,
+          2.5350430011749268,
+          2.173863172531128,
+          2.498014211654663,
+          2.2697107791900635,
+          2.317941188812256
+        ],
+        "weights_revision": "2112bffe1f9f64ff42b5103e672c4bda42f6eaccdf85ece3c82cedfc44d1df14"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-02-mlp-seed-29"
+    },
+    {
+      "family": "mlp",
+      "method": "candidate",
+      "metrics": {
+        "final": {
+          "accuracy": 0.28125,
+          "cross_entropy": 2.414722193092117,
+          "perplexity": 11.186662193804425
+        },
+        "initial": {
+          "accuracy": 0.03125,
+          "cross_entropy": 2.803620846113486,
+          "perplexity": 16.504298235660812
+        },
+        "training_loss": [
+          2.762233018875122,
+          2.739311933517456,
+          2.759519338607788,
+          2.731623411178589,
+          2.737128734588623,
+          2.6581575870513916,
+          2.6815969944000244,
+          2.617335081100464,
+          2.5627949237823486,
+          2.5835211277008057,
+          2.586327075958252,
+          2.462855577468872,
+          2.236867904663086,
+          2.4682891368865967,
+          2.291482448577881,
+          2.571469783782959,
+          2.1929163932800293,
+          2.404262065887451,
+          2.285637617111206,
+          2.2635011672973633
+        ],
+        "weights_revision": "f8e359193796167f58701183676f76858536e282582ef6a198cd2d206e652ba7"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-02-mlp-seed-29"
+    },
+    {
+      "family": "mlp",
+      "method": "normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.21875,
+          "cross_entropy": 2.430275542713492,
+          "perplexity": 11.362012368436293
+        },
+        "initial": {
+          "accuracy": 0.0625,
+          "cross_entropy": 2.7708619804874224,
+          "perplexity": 15.97239597133544
+        },
+        "training_loss": [
+          2.7669472694396973,
+          2.7622103691101074,
+          2.768188714981079,
+          2.7668633460998535,
+          2.744251251220703,
+          2.708132028579712,
+          2.717909097671509,
+          2.7066991329193115,
+          2.671915054321289,
+          2.686619997024536,
+          2.6973538398742676,
+          2.6155641078948975,
+          2.522155523300171,
+          2.561509609222412,
+          2.451183319091797,
+          2.646852493286133,
+          2.411330461502075,
+          2.581810235977173,
+          2.3880062103271484,
+          2.47332763671875
+        ],
+        "weights_revision": "ff1911d443d0a505350dcebfdb13d5186e165191be8b4068273a2a34e328c76b"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-02-mlp-seed-47"
+    },
+    {
+      "family": "mlp",
+      "method": "xavier_uniform",
+      "metrics": {
+        "final": {
+          "accuracy": 0.21875,
+          "cross_entropy": 2.483002946723686,
+          "perplexity": 11.977177293948571
+        },
+        "initial": {
+          "accuracy": 0.041666666666666664,
+          "cross_entropy": 2.8853629316854352,
+          "perplexity": 17.910066546749146
+        },
+        "training_loss": [
+          2.8616254329681396,
+          2.856858491897583,
+          2.881709575653076,
+          2.78088641166687,
+          2.7539079189300537,
+          2.703582763671875,
+          2.674252986907959,
+          2.708179235458374,
+          2.6529600620269775,
+          2.6478888988494873,
+          2.612786054611206,
+          2.4928672313690186,
+          2.482503652572632,
+          2.478255271911621,
+          2.4242103099823,
+          2.6395657062530518,
+          2.27699875831604,
+          2.4713592529296875,
+          2.3895349502563477,
+          2.3722996711730957
+        ],
+        "weights_revision": "ce28380ae070e22b699a27e584d2cef9956bf0ee100ba213076e6e474d241ce4"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-02-mlp-seed-47"
+    },
+    {
+      "family": "mlp",
+      "method": "kaiming_normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.22916666666666666,
+          "cross_entropy": 2.367825953639511,
+          "perplexity": 10.674160919531076
+        },
+        "initial": {
+          "accuracy": 0.0625,
+          "cross_entropy": 2.7774849010978904,
+          "perplexity": 16.078530955649804
+        },
+        "training_loss": [
+          2.678568124771118,
+          2.7955262660980225,
+          2.756176471710205,
+          2.701690673828125,
+          2.651118755340576,
+          2.6339313983917236,
+          2.6747279167175293,
+          2.554112672805786,
+          2.5072216987609863,
+          2.6292476654052734,
+          2.632016897201538,
+          2.4499754905700684,
+          2.4909300804138184,
+          2.445507049560547,
+          2.290985584259033,
+          2.3909716606140137,
+          2.386390209197998,
+          2.293639898300171,
+          2.167285442352295,
+          2.2869813442230225
+        ],
+        "weights_revision": "4d00d43ddf06d814b721de0750967d07e0bd295f23fc427585a1a7ae2fdf390b"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-02-mlp-seed-47"
+    },
+    {
+      "family": "mlp",
+      "method": "candidate",
+      "metrics": {
+        "final": {
+          "accuracy": 0.21875,
+          "cross_entropy": 2.483002946723686,
+          "perplexity": 11.977177293948571
+        },
+        "initial": {
+          "accuracy": 0.041666666666666664,
+          "cross_entropy": 2.8853629316854352,
+          "perplexity": 17.910066546749146
+        },
+        "training_loss": [
+          2.8616254329681396,
+          2.856858491897583,
+          2.881709575653076,
+          2.78088641166687,
+          2.7539079189300537,
+          2.703582763671875,
+          2.674252986907959,
+          2.708179235458374,
+          2.6529600620269775,
+          2.6478888988494873,
+          2.612786054611206,
+          2.4928672313690186,
+          2.482503652572632,
+          2.478255271911621,
+          2.4242103099823,
+          2.6395657062530518,
+          2.27699875831604,
+          2.4713592529296875,
+          2.3895349502563477,
+          2.3722996711730957
+        ],
+        "weights_revision": "ce28380ae070e22b699a27e584d2cef9956bf0ee100ba213076e6e474d241ce4"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-02-mlp-seed-47"
+    },
+    {
+      "family": "transformer",
+      "method": "normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.8333333333333334,
+          "cross_entropy": 0.6929778972675883,
+          "perplexity": 1.999661462070502
+        },
+        "initial": {
+          "accuracy": 0.13541666666666666,
+          "cross_entropy": 2.340713412195219,
+          "perplexity": 10.388645305926795
+        },
+        "training_loss": [
+          2.2779910564422607,
+          2.1137802600860596,
+          2.0177361965179443,
+          2.0177619457244873,
+          1.7229714393615723,
+          1.5704052448272705,
+          1.5569599866867065,
+          1.3202705383300781,
+          1.4960380792617798,
+          1.1453394889831543,
+          1.1329116821289062,
+          0.7253621220588684,
+          0.7353448867797852,
+          0.6503980755805969,
+          0.5741128325462341,
+          0.34972667694091797,
+          0.728095293045044,
+          0.49626949429512024,
+          0.6245177388191223,
+          0.3763275146484375
+        ],
+        "weights_revision": "8fc04662fc2b38b4227ca0e2d2205e8524b71624e4c7f03a438a5ab6ca8b11a6"
+      },
+      "task": "digits",
+      "trial": "digits-draw-03-transformer-seed-11"
+    },
+    {
+      "family": "transformer",
+      "method": "xavier_uniform",
+      "metrics": {
+        "final": {
+          "accuracy": 0.7395833333333334,
+          "cross_entropy": 0.9866861853331779,
+          "perplexity": 2.682330980491594
+        },
+        "initial": {
+          "accuracy": 0.15625,
+          "cross_entropy": 2.6795683017004013,
+          "perplexity": 14.57879829477387
+        },
+        "training_loss": [
+          2.8437461853027344,
+          2.418797492980957,
+          2.6964194774627686,
+          2.2758073806762695,
+          1.7475581169128418,
+          1.8028596639633179,
+          2.072608232498169,
+          2.0819203853607178,
+          2.2516531944274902,
+          1.8596270084381104,
+          2.272151231765747,
+          1.7241352796554565,
+          1.462776780128479,
+          1.1300891637802124,
+          0.9358426332473755,
+          0.9532157182693481,
+          1.3284250497817993,
+          0.7258891463279724,
+          0.8800371289253235,
+          0.5761502385139465
+        ],
+        "weights_revision": "bd254d63c8860f720d5767175559081a0f807018f68c13e3519a0a28cb936ef1"
+      },
+      "task": "digits",
+      "trial": "digits-draw-03-transformer-seed-11"
+    },
+    {
+      "family": "transformer",
+      "method": "kaiming_normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.625,
+          "cross_entropy": 1.0995162520933917,
+          "perplexity": 3.0027131163700775
+        },
+        "initial": {
+          "accuracy": 0.052083333333333336,
+          "cross_entropy": 2.612580451935266,
+          "perplexity": 13.63418786410765
+        },
+        "training_loss": [
+          2.2588179111480713,
+          2.2503244876861572,
+          2.104241371154785,
+          1.9905412197113037,
+          1.6785411834716797,
+          1.5884132385253906,
+          1.6427345275878906,
+          1.526713490486145,
+          2.018791437149048,
+          1.6412842273712158,
+          1.6429425477981567,
+          0.9780954718589783,
+          1.2382415533065796,
+          0.689727783203125,
+          0.9067988991737366,
+          0.51283860206604,
+          1.0208861827850342,
+          0.5652555823326111,
+          0.8279531598091125,
+          0.4877222180366516
+        ],
+        "weights_revision": "1a13c91bf981b3e6e2e9eb09103e02b4133cdd95f22ed7271df1233e34a1da84"
+      },
+      "task": "digits",
+      "trial": "digits-draw-03-transformer-seed-11"
+    },
+    {
+      "family": "transformer",
+      "method": "candidate",
+      "metrics": {
+        "final": {
+          "accuracy": 0.7395833333333334,
+          "cross_entropy": 0.9866861853331779,
+          "perplexity": 2.682330980491594
+        },
+        "initial": {
+          "accuracy": 0.15625,
+          "cross_entropy": 2.6795683017004013,
+          "perplexity": 14.57879829477387
+        },
+        "training_loss": [
+          2.8437461853027344,
+          2.418797492980957,
+          2.6964194774627686,
+          2.2758073806762695,
+          1.7475581169128418,
+          1.8028596639633179,
+          2.072608232498169,
+          2.0819203853607178,
+          2.2516531944274902,
+          1.8596270084381104,
+          2.272151231765747,
+          1.7241352796554565,
+          1.462776780128479,
+          1.1300891637802124,
+          0.9358426332473755,
+          0.9532157182693481,
+          1.3284250497817993,
+          0.7258891463279724,
+          0.8800371289253235,
+          0.5761502385139465
+        ],
+        "weights_revision": "bd254d63c8860f720d5767175559081a0f807018f68c13e3519a0a28cb936ef1"
+      },
+      "task": "digits",
+      "trial": "digits-draw-03-transformer-seed-11"
+    },
+    {
+      "family": "transformer",
+      "method": "normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.8229166666666666,
+          "cross_entropy": 0.6914628123007748,
+          "perplexity": 1.9966340989858569
+        },
+        "initial": {
+          "accuracy": 0.15625,
+          "cross_entropy": 2.2693275451713446,
+          "perplexity": 9.672894042257184
+        },
+        "training_loss": [
+          2.3672492504119873,
+          2.1717872619628906,
+          2.0928707122802734,
+          2.082331895828247,
+          1.7299331426620483,
+          1.621548056602478,
+          1.6118680238723755,
+          1.4834365844726562,
+          1.6068098545074463,
+          1.254638433456421,
+          1.3179477453231812,
+          0.9134125113487244,
+          0.7763533592224121,
+          0.6965662240982056,
+          0.5988632440567017,
+          0.37913239002227783,
+          0.7414245009422302,
+          0.6345112323760986,
+          0.6737686395645142,
+          0.330492228269577
+        ],
+        "weights_revision": "79bfa5cef50b975d9e3fcca94b2af9ef06044ee7b5d75e435b8811c063cad5fd"
+      },
+      "task": "digits",
+      "trial": "digits-draw-03-transformer-seed-29"
+    },
+    {
+      "family": "transformer",
+      "method": "xavier_uniform",
+      "metrics": {
+        "final": {
+          "accuracy": 0.6875,
+          "cross_entropy": 1.0072066403670716,
+          "perplexity": 2.7379422657739387
+        },
+        "initial": {
+          "accuracy": 0.11458333333333333,
+          "cross_entropy": 3.334298408919253,
+          "perplexity": 28.05869058946552
+        },
+        "training_loss": [
+          3.865783214569092,
+          2.608804225921631,
+          2.1752309799194336,
+          2.120968818664551,
+          1.845462679862976,
+          1.8625786304473877,
+          1.5307133197784424,
+          1.532848596572876,
+          2.0035157203674316,
+          1.8339660167694092,
+          2.11275577545166,
+          1.4117649793624878,
+          1.3773924112319946,
+          1.0273548364639282,
+          1.010035514831543,
+          0.8511290550231934,
+          0.8976882100105286,
+          0.6680445075035095,
+          1.1649283170700073,
+          0.49354568123817444
+        ],
+        "weights_revision": "be4d15a13f4f2c8bdcdee2a944e1c50025ce3483de4f85bded97d7915eb11213"
+      },
+      "task": "digits",
+      "trial": "digits-draw-03-transformer-seed-29"
+    },
+    {
+      "family": "transformer",
+      "method": "kaiming_normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.4375,
+          "cross_entropy": 1.6583620389263851,
+          "perplexity": 5.250703349305079
+        },
+        "initial": {
+          "accuracy": 0.13541666666666666,
+          "cross_entropy": 2.7795738449630303,
+          "perplexity": 16.112153209524138
+        },
+        "training_loss": [
+          2.7743308544158936,
+          2.3246614933013916,
+          2.2519757747650146,
+          2.2556962966918945,
+          1.7411750555038452,
+          1.940511703491211,
+          2.0710480213165283,
+          2.0700454711914062,
+          2.3976809978485107,
+          1.845790982246399,
+          1.8655401468276978,
+          1.966721773147583,
+          1.9380712509155273,
+          1.5605626106262207,
+          1.638126015663147,
+          1.5445849895477295,
+          1.7192124128341675,
+          1.2668225765228271,
+          1.4404300451278687,
+          1.2140341997146606
+        ],
+        "weights_revision": "a662135505eece68f601cec91cabe5c116839fb591712a6d66d3dec28c236103"
+      },
+      "task": "digits",
+      "trial": "digits-draw-03-transformer-seed-29"
+    },
+    {
+      "family": "transformer",
+      "method": "candidate",
+      "metrics": {
+        "final": {
+          "accuracy": 0.6875,
+          "cross_entropy": 1.0072066403670716,
+          "perplexity": 2.7379422657739387
+        },
+        "initial": {
+          "accuracy": 0.11458333333333333,
+          "cross_entropy": 3.334298408919253,
+          "perplexity": 28.05869058946552
+        },
+        "training_loss": [
+          3.865783214569092,
+          2.608804225921631,
+          2.1752309799194336,
+          2.120968818664551,
+          1.845462679862976,
+          1.8625786304473877,
+          1.5307133197784424,
+          1.532848596572876,
+          2.0035157203674316,
+          1.8339660167694092,
+          2.11275577545166,
+          1.4117649793624878,
+          1.3773924112319946,
+          1.0273548364639282,
+          1.010035514831543,
+          0.8511290550231934,
+          0.8976882100105286,
+          0.6680445075035095,
+          1.1649283170700073,
+          0.49354568123817444
+        ],
+        "weights_revision": "be4d15a13f4f2c8bdcdee2a944e1c50025ce3483de4f85bded97d7915eb11213"
+      },
+      "task": "digits",
+      "trial": "digits-draw-03-transformer-seed-29"
+    },
+    {
+      "family": "transformer",
+      "method": "normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.8125,
+          "cross_entropy": 0.6925289172622658,
+          "perplexity": 1.9987638555753815
+        },
+        "initial": {
+          "accuracy": 0.03125,
+          "cross_entropy": 2.3852813083693962,
+          "perplexity": 10.862117839834946
+        },
+        "training_loss": [
+          2.3836474418640137,
+          2.157639980316162,
+          2.103853225708008,
+          2.1273419857025146,
+          1.806746006011963,
+          1.6853559017181396,
+          1.7029098272323608,
+          1.4969778060913086,
+          1.6017035245895386,
+          1.13075590133667,
+          1.198716402053833,
+          0.8890557885169983,
+          0.7399845719337463,
+          0.7018905282020569,
+          0.7233983278274536,
+          0.34284380078315735,
+          0.7572925686836243,
+          0.4775293171405792,
+          0.5930061340332031,
+          0.3977472484111786
+        ],
+        "weights_revision": "77e0da35c96444291cf744c769e49f768d035ad10c3d995cb75d86de567a11a1"
+      },
+      "task": "digits",
+      "trial": "digits-draw-03-transformer-seed-47"
+    },
+    {
+      "family": "transformer",
+      "method": "xavier_uniform",
+      "metrics": {
+        "final": {
+          "accuracy": 0.6041666666666666,
+          "cross_entropy": 1.114459822510428,
+          "perplexity": 3.047921315938645
+        },
+        "initial": {
+          "accuracy": 0.14583333333333334,
+          "cross_entropy": 2.9245909223831954,
+          "perplexity": 18.626604764070514
+        },
+        "training_loss": [
+          2.861084461212158,
+          2.50496506690979,
+          2.613452911376953,
+          2.212888240814209,
+          1.9909483194351196,
+          1.8310593366622925,
+          2.0394792556762695,
+          1.8642446994781494,
+          2.309901714324951,
+          1.8531591892242432,
+          1.8250166177749634,
+          1.706249475479126,
+          1.7600576877593994,
+          1.3532483577728271,
+          1.4085005521774292,
+          1.1453378200531006,
+          1.672584891319275,
+          0.788576602935791,
+          1.2368876934051514,
+          0.6327387094497681
+        ],
+        "weights_revision": "ed9b9c91c7a10aa71dc4acc883e6caeca08c65c88fc09499b14eff50d25a2094"
+      },
+      "task": "digits",
+      "trial": "digits-draw-03-transformer-seed-47"
+    },
+    {
+      "family": "transformer",
+      "method": "kaiming_normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.375,
+          "cross_entropy": 1.591623387686374,
+          "perplexity": 4.91171607909145
+        },
+        "initial": {
+          "accuracy": 0.15625,
+          "cross_entropy": 2.949324765450258,
+          "perplexity": 19.093057082788874
+        },
+        "training_loss": [
+          2.8571887016296387,
+          2.879304885864258,
+          2.2214105129241943,
+          2.6875410079956055,
+          2.207261085510254,
+          2.191467046737671,
+          2.1607136726379395,
+          2.321512460708618,
+          2.631516933441162,
+          2.0165069103240967,
+          2.308422565460205,
+          2.639709234237671,
+          1.8534952402114868,
+          1.9179816246032715,
+          2.006910562515259,
+          1.6818532943725586,
+          1.701342225074768,
+          1.6734700202941895,
+          1.5072609186172485,
+          1.5748927593231201
+        ],
+        "weights_revision": "579400ed415bac14329ee74416c91c53b354f1d3922e5c6308663844443fa546"
+      },
+      "task": "digits",
+      "trial": "digits-draw-03-transformer-seed-47"
+    },
+    {
+      "family": "transformer",
+      "method": "candidate",
+      "metrics": {
+        "final": {
+          "accuracy": 0.6041666666666666,
+          "cross_entropy": 1.114459822510428,
+          "perplexity": 3.047921315938645
+        },
+        "initial": {
+          "accuracy": 0.14583333333333334,
+          "cross_entropy": 2.9245909223831954,
+          "perplexity": 18.626604764070514
+        },
+        "training_loss": [
+          2.861084461212158,
+          2.50496506690979,
+          2.613452911376953,
+          2.212888240814209,
+          1.9909483194351196,
+          1.8310593366622925,
+          2.0394792556762695,
+          1.8642446994781494,
+          2.309901714324951,
+          1.8531591892242432,
+          1.8250166177749634,
+          1.706249475479126,
+          1.7600576877593994,
+          1.3532483577728271,
+          1.4085005521774292,
+          1.1453378200531006,
+          1.672584891319275,
+          0.788576602935791,
+          1.2368876934051514,
+          0.6327387094497681
+        ],
+        "weights_revision": "ed9b9c91c7a10aa71dc4acc883e6caeca08c65c88fc09499b14eff50d25a2094"
+      },
+      "task": "digits",
+      "trial": "digits-draw-03-transformer-seed-47"
+    },
+    {
+      "family": "transformer",
+      "method": "normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.4479166666666667,
+          "cross_entropy": 1.7615250128672686,
+          "perplexity": 5.821308198545267
+        },
+        "initial": {
+          "accuracy": 0.041666666666666664,
+          "cross_entropy": 2.8132983866073524,
+          "perplexity": 16.66479460260186
+        },
+        "training_loss": [
+          2.802650213241577,
+          2.8260250091552734,
+          2.6020517349243164,
+          2.7771472930908203,
+          2.410024642944336,
+          2.2025692462921143,
+          2.304705858230591,
+          2.2197372913360596,
+          1.9423813819885254,
+          2.130082845687866,
+          2.168187379837036,
+          1.6772990226745605,
+          1.2423523664474487,
+          1.5737909078598022,
+          1.2981741428375244,
+          2.024209499359131,
+          0.9816981554031372,
+          1.5812737941741943,
+          1.234503149986267,
+          1.3008701801300049
+        ],
+        "weights_revision": "bf8d32ebd8e34d9bc8db72f3dd142f3bda3fd6ab997f31687358546ccdec66b7"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-03-transformer-seed-11"
+    },
+    {
+      "family": "transformer",
+      "method": "xavier_uniform",
+      "metrics": {
+        "final": {
+          "accuracy": 0.4166666666666667,
+          "cross_entropy": 2.062407682798344,
+          "perplexity": 7.864883176423563
+        },
+        "initial": {
+          "accuracy": 0.041666666666666664,
+          "cross_entropy": 3.6553931742852783,
+          "perplexity": 38.682727179260134
+        },
+        "training_loss": [
+          3.488913059234619,
+          3.331531524658203,
+          2.912269115447998,
+          3.071315288543701,
+          2.996677875518799,
+          2.456655979156494,
+          2.3931610584259033,
+          2.0961005687713623,
+          2.3361613750457764,
+          2.322511672973633,
+          2.456260919570923,
+          1.816474437713623,
+          1.48838472366333,
+          1.6435894966125488,
+          1.3567917346954346,
+          2.1493070125579834,
+          1.1187796592712402,
+          1.94594144821167,
+          1.5409576892852783,
+          1.4649486541748047
+        ],
+        "weights_revision": "c828341fee66e6e3a35736a31b36138714ae2093fc617d7f8e4e5cddbef71696"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-03-transformer-seed-11"
+    },
+    {
+      "family": "transformer",
+      "method": "kaiming_normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.3333333333333333,
+          "cross_entropy": 2.249453739055704,
+          "perplexity": 9.482554472138625
+        },
+        "initial": {
+          "accuracy": 0.010416666666666666,
+          "cross_entropy": 3.362889311766613,
+          "perplexity": 28.872492110864957
+        },
+        "training_loss": [
+          3.002304792404175,
+          3.0048651695251465,
+          2.992565631866455,
+          2.9252190589904785,
+          2.725385904312134,
+          2.2641937732696533,
+          2.599078416824341,
+          2.209670066833496,
+          2.0146477222442627,
+          2.529918909072876,
+          2.498488664627075,
+          2.1558499336242676,
+          1.8050706386566162,
+          1.6959218978881836,
+          1.3247586488723755,
+          2.028740644454956,
+          1.3248934745788574,
+          1.669767141342163,
+          2.0103752613067627,
+          1.1907588243484497
+        ],
+        "weights_revision": "8b20544a786ee75421632784fa4ccfe437c80a42eb20fc55d53e3222811982dd"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-03-transformer-seed-11"
+    },
+    {
+      "family": "transformer",
+      "method": "candidate",
+      "metrics": {
+        "final": {
+          "accuracy": 0.4166666666666667,
+          "cross_entropy": 2.062407682798344,
+          "perplexity": 7.864883176423563
+        },
+        "initial": {
+          "accuracy": 0.041666666666666664,
+          "cross_entropy": 3.6553931742852783,
+          "perplexity": 38.682727179260134
+        },
+        "training_loss": [
+          3.488913059234619,
+          3.331531524658203,
+          2.912269115447998,
+          3.071315288543701,
+          2.996677875518799,
+          2.456655979156494,
+          2.3931610584259033,
+          2.0961005687713623,
+          2.3361613750457764,
+          2.322511672973633,
+          2.456260919570923,
+          1.816474437713623,
+          1.48838472366333,
+          1.6435894966125488,
+          1.3567917346954346,
+          2.1493070125579834,
+          1.1187796592712402,
+          1.94594144821167,
+          1.5409576892852783,
+          1.4649486541748047
+        ],
+        "weights_revision": "c828341fee66e6e3a35736a31b36138714ae2093fc617d7f8e4e5cddbef71696"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-03-transformer-seed-11"
+    },
+    {
+      "family": "transformer",
+      "method": "normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.4583333333333333,
+          "cross_entropy": 1.79670435596187,
+          "perplexity": 6.029742797178843
+        },
+        "initial": {
+          "accuracy": 0.052083333333333336,
+          "cross_entropy": 2.9146336013112464,
+          "perplexity": 18.44205402028034
+        },
+        "training_loss": [
+          2.9328231811523438,
+          3.052231788635254,
+          2.7010574340820312,
+          2.8355045318603516,
+          2.631420850753784,
+          2.2860071659088135,
+          2.3405542373657227,
+          2.226262331008911,
+          1.9924014806747437,
+          2.1536011695861816,
+          2.266448974609375,
+          1.6998579502105713,
+          1.2552804946899414,
+          1.6076079607009888,
+          1.2311700582504272,
+          1.98135244846344,
+          1.0427346229553223,
+          1.6786320209503174,
+          1.389892816543579,
+          1.244752049446106
+        ],
+        "weights_revision": "10afa1d6176462f07e5a2357da092680923921d39e16a73ab3f9bf67006f996a"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-03-transformer-seed-29"
+    },
+    {
+      "family": "transformer",
+      "method": "xavier_uniform",
+      "metrics": {
+        "final": {
+          "accuracy": 0.4270833333333333,
+          "cross_entropy": 1.9737447731563165,
+          "perplexity": 7.197579386358953
+        },
+        "initial": {
+          "accuracy": 0.07291666666666667,
+          "cross_entropy": 3.4716768256946353,
+          "perplexity": 32.19067536564303
+        },
+        "training_loss": [
+          3.565372943878174,
+          3.092211961746216,
+          2.99353289604187,
+          2.969601631164551,
+          2.6686785221099854,
+          2.3642377853393555,
+          2.6791720390319824,
+          2.3924951553344727,
+          2.068909168243408,
+          2.318302631378174,
+          1.8784632682800293,
+          1.7722679376602173,
+          1.3129897117614746,
+          1.6152088642120361,
+          1.1645630598068237,
+          2.006701707839966,
+          1.1843600273132324,
+          1.4212379455566406,
+          1.2450125217437744,
+          1.1502794027328491
+        ],
+        "weights_revision": "d686e0b243b37be1c80a95984355bcaa8de9608567ac5a332ce5f430467648bb"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-03-transformer-seed-29"
+    },
+    {
+      "family": "transformer",
+      "method": "kaiming_normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.3229166666666667,
+          "cross_entropy": 2.357952255400211,
+          "perplexity": 10.569286078936928
+        },
+        "initial": {
+          "accuracy": 0.03125,
+          "cross_entropy": 4.083704900911045,
+          "perplexity": 59.36500438073881
+        },
+        "training_loss": [
+          3.9881515502929688,
+          3.8529438972473145,
+          3.6993281841278076,
+          3.5930697917938232,
+          3.837506055831909,
+          2.3526878356933594,
+          2.707789659500122,
+          2.6028494834899902,
+          2.506530284881592,
+          2.31587290763855,
+          2.5977721214294434,
+          2.2386322021484375,
+          2.068556070327759,
+          1.9615153074264526,
+          1.7110517024993896,
+          2.34445858001709,
+          1.5374912023544312,
+          1.996814489364624,
+          2.2466554641723633,
+          1.7761433124542236
+        ],
+        "weights_revision": "16cad9edc9afea1537a6a47b2d42c2e99961a6c4e7455231bbe45ba228d06714"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-03-transformer-seed-29"
+    },
+    {
+      "family": "transformer",
+      "method": "candidate",
+      "metrics": {
+        "final": {
+          "accuracy": 0.4270833333333333,
+          "cross_entropy": 1.9737447731563165,
+          "perplexity": 7.197579386358953
+        },
+        "initial": {
+          "accuracy": 0.07291666666666667,
+          "cross_entropy": 3.4716768256946353,
+          "perplexity": 32.19067536564303
+        },
+        "training_loss": [
+          3.565372943878174,
+          3.092211961746216,
+          2.99353289604187,
+          2.969601631164551,
+          2.6686785221099854,
+          2.3642377853393555,
+          2.6791720390319824,
+          2.3924951553344727,
+          2.068909168243408,
+          2.318302631378174,
+          1.8784632682800293,
+          1.7722679376602173,
+          1.3129897117614746,
+          1.6152088642120361,
+          1.1645630598068237,
+          2.006701707839966,
+          1.1843600273132324,
+          1.4212379455566406,
+          1.2450125217437744,
+          1.1502794027328491
+        ],
+        "weights_revision": "d686e0b243b37be1c80a95984355bcaa8de9608567ac5a332ce5f430467648bb"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-03-transformer-seed-29"
+    },
+    {
+      "family": "transformer",
+      "method": "normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.4479166666666667,
+          "cross_entropy": 1.6784443081564808,
+          "perplexity": 5.35721530889401
+        },
+        "initial": {
+          "accuracy": 0.08333333333333333,
+          "cross_entropy": 2.721472877477431,
+          "perplexity": 15.20269747362881
+        },
+        "training_loss": [
+          2.541583776473999,
+          2.7942357063293457,
+          2.7254714965820312,
+          2.703155994415283,
+          2.348609209060669,
+          2.2062153816223145,
+          2.1481592655181885,
+          2.2172253131866455,
+          1.960871696472168,
+          2.026414155960083,
+          2.013479709625244,
+          1.6605883836746216,
+          1.1437757015228271,
+          1.562240481376648,
+          1.300337791442871,
+          1.9579428434371948,
+          0.9601798057556152,
+          1.58419930934906,
+          1.2520782947540283,
+          1.1450327634811401
+        ],
+        "weights_revision": "a90863f050b1b9599d4f4fb96bbca495d97176d336684a70075608145052eaed"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-03-transformer-seed-47"
+    },
+    {
+      "family": "transformer",
+      "method": "xavier_uniform",
+      "metrics": {
+        "final": {
+          "accuracy": 0.4479166666666667,
+          "cross_entropy": 1.942958424753684,
+          "perplexity": 6.979368394274302
+        },
+        "initial": {
+          "accuracy": 0.052083333333333336,
+          "cross_entropy": 3.7275356228007435,
+          "perplexity": 41.57652157812482
+        },
+        "training_loss": [
+          4.129488468170166,
+          2.996828079223633,
+          3.100620746612549,
+          3.4473860263824463,
+          3.443527936935425,
+          2.5438168048858643,
+          2.4072468280792236,
+          2.497685194015503,
+          2.4933040142059326,
+          2.39146089553833,
+          2.4357430934906006,
+          1.779877781867981,
+          1.3638174533843994,
+          1.7300360202789307,
+          1.3207024335861206,
+          2.36929988861084,
+          1.1284608840942383,
+          1.8243316411972046,
+          1.219333529472351,
+          1.5238673686981201
+        ],
+        "weights_revision": "b9ae89d422156401e8a68929586c3da43852d9a87724e5d62e9856ece24cbf18"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-03-transformer-seed-47"
+    },
+    {
+      "family": "transformer",
+      "method": "kaiming_normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.34375,
+          "cross_entropy": 1.9892969067978168,
+          "perplexity": 7.310392068007912
+        },
+        "initial": {
+          "accuracy": 0.03125,
+          "cross_entropy": 3.5203720004843433,
+          "perplexity": 33.796998625509524
+        },
+        "training_loss": [
+          2.723790168762207,
+          3.6784870624542236,
+          3.2824652194976807,
+          3.5567214488983154,
+          3.0796494483947754,
+          2.818725347518921,
+          2.5191776752471924,
+          2.37310791015625,
+          2.010831356048584,
+          2.7455174922943115,
+          2.14667010307312,
+          1.6212763786315918,
+          1.5626734495162964,
+          1.5915857553482056,
+          1.2086623907089233,
+          1.9426722526550293,
+          1.3263869285583496,
+          1.8595612049102783,
+          1.7874445915222168,
+          0.9599403142929077
+        ],
+        "weights_revision": "5e7aa5653dcca01c9578f3f533b5003f58a6bc9e4f7a9f06492e011c3505c7be"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-03-transformer-seed-47"
+    },
+    {
+      "family": "transformer",
+      "method": "candidate",
+      "metrics": {
+        "final": {
+          "accuracy": 0.4479166666666667,
+          "cross_entropy": 1.942958424753684,
+          "perplexity": 6.979368394274302
+        },
+        "initial": {
+          "accuracy": 0.052083333333333336,
+          "cross_entropy": 3.7275356228007435,
+          "perplexity": 41.57652157812482
+        },
+        "training_loss": [
+          4.129488468170166,
+          2.996828079223633,
+          3.100620746612549,
+          3.4473860263824463,
+          3.443527936935425,
+          2.5438168048858643,
+          2.4072468280792236,
+          2.497685194015503,
+          2.4933040142059326,
+          2.39146089553833,
+          2.4357430934906006,
+          1.779877781867981,
+          1.3638174533843994,
+          1.7300360202789307,
+          1.3207024335861206,
+          2.36929988861084,
+          1.1284608840942383,
+          1.8243316411972046,
+          1.219333529472351,
+          1.5238673686981201
+        ],
+        "weights_revision": "b9ae89d422156401e8a68929586c3da43852d9a87724e5d62e9856ece24cbf18"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-03-transformer-seed-47"
+    }
+  ]
+}

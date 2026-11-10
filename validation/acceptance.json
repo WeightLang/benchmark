@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-10",
+  "harbor_version": "0.25.0",
+  "rust_version": "1.99.0",
+  "weightlang_revision": "379729a3cd0a15ccace3962496edd3f1502eb18f",
+  "evaluator_source_sha256": "a58bef8089fd70dcfe9373c3d34928bd0b3010136411c00d410c10480aa97823",
+  "oracle_reward": 0.3172743055555555,
+  "nop_reward": 0.0,
+  "rust_tests": 4,
+  "python_tests": 4,
+  "oracle_exceptions": 0,
+  "nop_exceptions": 0,
+  "build_method": "scripts/build-local-image.sh (Rust 1.99.0 mounted read-only, Debian Bookworm container compilation)",
+  "oracle_report_sha256": "c6b5238fefc5691792bcc64d3378f2a6f05d95e9076ead84b51ad2f9ecc7f65b"
+}

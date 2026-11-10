@@ -1,0 +1,1373 @@
+{
+  "config": {
+    "architecture_seed": 20261110,
+    "batch_size": 16,
+    "draws": 4,
+    "initialization_seeds": [
+      11,
+      29,
+      47
+    ],
+    "learning_rate": 0.009999999776482582,
+    "steps": 20,
+    "test_samples": 96,
+    "test_seed": 202,
+    "train_samples": 96,
+    "train_seed": 101,
+    "version": 1
+  },
+  "data_sha256": {
+    "charlm-test.json": "64cfa9aa4910b53ad85ae58420679dd167430948a22a09a33c392acb04b0e8b0",
+    "charlm-train.json": "6b697331b3867e2fa7020658afe42fa98b6d57f77eba712671d45f80ecbf0087",
+    "digits-test.json": "e16ac55d231b30dd253f3c67f40e7dad8e92b9ad1abb30a18c18b90e1395e88e",
+    "digits-train.json": "60cb08bdde1e8b2b9e553f944c78a92ef1fd5b84ccea5586b32271141fa8c736"
+  },
+  "model_sha256": {
+    "cnn": "77a66a1a931e05557dae20f4be16115aa9a5df53adcd591998e07378e9bc810d",
+    "mlp": "62563e69547ffac0711d2738d88da4ac42c88b8fccc9687b40750b33e83b5024",
+    "resnet": "2b036b9fa5f1606a776d6d0ee444ec01d583cadbaed46dc2e0e711eaffd2d0fa",
+    "transformer": "594e621444a876e4506b233982624216eba5b2012666664ee8195ffff03e21bd"
+  },
+  "trials": [
+    {
+      "family": "resnet",
+      "id": "digits-draw-00-resnet-seed-11",
+      "parameters": [
+        {
+          "name": "stem_weight",
+          "shape": [
+            2,
+            1,
+            3,
+            3
+          ]
+        },
+        {
+          "name": "stem_bias",
+          "shape": [
+            2
+          ]
+        },
+        {
+          "name": "block1_weight",
+          "shape": [
+            2,
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "name": "block1_bias",
+          "shape": [
+            2
+          ]
+        },
+        {
+          "name": "block2_weight",
+          "shape": [
+            2,
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "name": "block2_bias",
+          "shape": [
+            2
+          ]
+        },
+        {
+          "name": "head_weight",
+          "shape": [
+            10,
+            32
+          ]
+        },
+        {
+          "name": "head_bias",
+          "shape": [
+            10
+          ]
+        }
+      ],
+      "seed": 11,
+      "task": "digits"
+    },
+    {
+      "family": "resnet",
+      "id": "digits-draw-00-resnet-seed-29",
+      "parameters": [
+        {
+          "name": "stem_weight",
+          "shape": [
+            2,
+            1,
+            3,
+            3
+          ]
+        },
+        {
+          "name": "stem_bias",
+          "shape": [
+            2
+          ]
+        },
+        {
+          "name": "block1_weight",
+          "shape": [
+            2,
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "name": "block1_bias",
+          "shape": [
+            2
+          ]
+        },
+        {
+          "name": "block2_weight",
+          "shape": [
+            2,
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "name": "block2_bias",
+          "shape": [
+            2
+          ]
+        },
+        {
+          "name": "head_weight",
+          "shape": [
+            10,
+            32
+          ]
+        },
+        {
+          "name": "head_bias",
+          "shape": [
+            10
+          ]
+        }
+      ],
+      "seed": 29,
+      "task": "digits"
+    },
+    {
+      "family": "resnet",
+      "id": "digits-draw-00-resnet-seed-47",
+      "parameters": [
+        {
+          "name": "stem_weight",
+          "shape": [
+            2,
+            1,
+            3,
+            3
+          ]
+        },
+        {
+          "name": "stem_bias",
+          "shape": [
+            2
+          ]
+        },
+        {
+          "name": "block1_weight",
+          "shape": [
+            2,
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "name": "block1_bias",
+          "shape": [
+            2
+          ]
+        },
+        {
+          "name": "block2_weight",
+          "shape": [
+            2,
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "name": "block2_bias",
+          "shape": [
+            2
+          ]
+        },
+        {
+          "name": "head_weight",
+          "shape": [
+            10,
+            32
+          ]
+        },
+        {
+          "name": "head_bias",
+          "shape": [
+            10
+          ]
+        }
+      ],
+      "seed": 47,
+      "task": "digits"
+    },
+    {
+      "family": "resnet",
+      "id": "charlm-draw-00-resnet-seed-11",
+      "parameters": [
+        {
+          "name": "stem_weight",
+          "shape": [
+            2,
+            1,
+            3,
+            3
+          ]
+        },
+        {
+          "name": "stem_bias",
+          "shape": [
+            2
+          ]
+        },
+        {
+          "name": "block1_weight",
+          "shape": [
+            2,
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "name": "block1_bias",
+          "shape": [
+            2
+          ]
+        },
+        {
+          "name": "block2_weight",
+          "shape": [
+            2,
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "name": "block2_bias",
+          "shape": [
+            2
+          ]
+        },
+        {
+          "name": "head_weight",
+          "shape": [
+            16,
+            32
+          ]
+        },
+        {
+          "name": "head_bias",
+          "shape": [
+            16
+          ]
+        }
+      ],
+      "seed": 11,
+      "task": "charlm"
+    },
+    {
+      "family": "resnet",
+      "id": "charlm-draw-00-resnet-seed-29",
+      "parameters": [
+        {
+          "name": "stem_weight",
+          "shape": [
+            2,
+            1,
+            3,
+            3
+          ]
+        },
+        {
+          "name": "stem_bias",
+          "shape": [
+            2
+          ]
+        },
+        {
+          "name": "block1_weight",
+          "shape": [
+            2,
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "name": "block1_bias",
+          "shape": [
+            2
+          ]
+        },
+        {
+          "name": "block2_weight",
+          "shape": [
+            2,
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "name": "block2_bias",
+          "shape": [
+            2
+          ]
+        },
+        {
+          "name": "head_weight",
+          "shape": [
+            16,
+            32
+          ]
+        },
+        {
+          "name": "head_bias",
+          "shape": [
+            16
+          ]
+        }
+      ],
+      "seed": 29,
+      "task": "charlm"
+    },
+    {
+      "family": "resnet",
+      "id": "charlm-draw-00-resnet-seed-47",
+      "parameters": [
+        {
+          "name": "stem_weight",
+          "shape": [
+            2,
+            1,
+            3,
+            3
+          ]
+        },
+        {
+          "name": "stem_bias",
+          "shape": [
+            2
+          ]
+        },
+        {
+          "name": "block1_weight",
+          "shape": [
+            2,
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "name": "block1_bias",
+          "shape": [
+            2
+          ]
+        },
+        {
+          "name": "block2_weight",
+          "shape": [
+            2,
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "name": "block2_bias",
+          "shape": [
+            2
+          ]
+        },
+        {
+          "name": "head_weight",
+          "shape": [
+            16,
+            32
+          ]
+        },
+        {
+          "name": "head_bias",
+          "shape": [
+            16
+          ]
+        }
+      ],
+      "seed": 47,
+      "task": "charlm"
+    },
+    {
+      "family": "cnn",
+      "id": "digits-draw-01-cnn-seed-11",
+      "parameters": [
+        {
+          "name": "conv_weight",
+          "shape": [
+            4,
+            1,
+            3,
+            3
+          ]
+        },
+        {
+          "name": "conv_bias",
+          "shape": [
+            4
+          ]
+        },
+        {
+          "name": "head_weight",
+          "shape": [
+            10,
+            64
+          ]
+        },
+        {
+          "name": "head_bias",
+          "shape": [
+            10
+          ]
+        }
+      ],
+      "seed": 11,
+      "task": "digits"
+    },
+    {
+      "family": "cnn",
+      "id": "digits-draw-01-cnn-seed-29",
+      "parameters": [
+        {
+          "name": "conv_weight",
+          "shape": [
+            4,
+            1,
+            3,
+            3
+          ]
+        },
+        {
+          "name": "conv_bias",
+          "shape": [
+            4
+          ]
+        },
+        {
+          "name": "head_weight",
+          "shape": [
+            10,
+            64
+          ]
+        },
+        {
+          "name": "head_bias",
+          "shape": [
+            10
+          ]
+        }
+      ],
+      "seed": 29,
+      "task": "digits"
+    },
+    {
+      "family": "cnn",
+      "id": "digits-draw-01-cnn-seed-47",
+      "parameters": [
+        {
+          "name": "conv_weight",
+          "shape": [
+            4,
+            1,
+            3,
+            3
+          ]
+        },
+        {
+          "name": "conv_bias",
+          "shape": [
+            4
+          ]
+        },
+        {
+          "name": "head_weight",
+          "shape": [
+            10,
+            64
+          ]
+        },
+        {
+          "name": "head_bias",
+          "shape": [
+            10
+          ]
+        }
+      ],
+      "seed": 47,
+      "task": "digits"
+    },
+    {
+      "family": "cnn",
+      "id": "charlm-draw-01-cnn-seed-11",
+      "parameters": [
+        {
+          "name": "conv_weight",
+          "shape": [
+            4,
+            1,
+            3,
+            3
+          ]
+        },
+        {
+          "name": "conv_bias",
+          "shape": [
+            4
+          ]
+        },
+        {
+          "name": "head_weight",
+          "shape": [
+            16,
+            64
+          ]
+        },
+        {
+          "name": "head_bias",
+          "shape": [
+            16
+          ]
+        }
+      ],
+      "seed": 11,
+      "task": "charlm"
+    },
+    {
+      "family": "cnn",
+      "id": "charlm-draw-01-cnn-seed-29",
+      "parameters": [
+        {
+          "name": "conv_weight",
+          "shape": [
+            4,
+            1,
+            3,
+            3
+          ]
+        },
+        {
+          "name": "conv_bias",
+          "shape": [
+            4
+          ]
+        },
+        {
+          "name": "head_weight",
+          "shape": [
+            16,
+            64
+          ]
+        },
+        {
+          "name": "head_bias",
+          "shape": [
+            16
+          ]
+        }
+      ],
+      "seed": 29,
+      "task": "charlm"
+    },
+    {
+      "family": "cnn",
+      "id": "charlm-draw-01-cnn-seed-47",
+      "parameters": [
+        {
+          "name": "conv_weight",
+          "shape": [
+            4,
+            1,
+            3,
+            3
+          ]
+        },
+        {
+          "name": "conv_bias",
+          "shape": [
+            4
+          ]
+        },
+        {
+          "name": "head_weight",
+          "shape": [
+            16,
+            64
+          ]
+        },
+        {
+          "name": "head_bias",
+          "shape": [
+            16
+          ]
+        }
+      ],
+      "seed": 47,
+      "task": "charlm"
+    },
+    {
+      "family": "mlp",
+      "id": "digits-draw-02-mlp-seed-11",
+      "parameters": [
+        {
+          "name": "hidden_weight",
+          "shape": [
+            16,
+            64
+          ]
+        },
+        {
+          "name": "hidden_bias",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "name": "head_weight",
+          "shape": [
+            10,
+            16
+          ]
+        },
+        {
+          "name": "head_bias",
+          "shape": [
+            10
+          ]
+        }
+      ],
+      "seed": 11,
+      "task": "digits"
+    },
+    {
+      "family": "mlp",
+      "id": "digits-draw-02-mlp-seed-29",
+      "parameters": [
+        {
+          "name": "hidden_weight",
+          "shape": [
+            16,
+            64
+          ]
+        },
+        {
+          "name": "hidden_bias",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "name": "head_weight",
+          "shape": [
+            10,
+            16
+          ]
+        },
+        {
+          "name": "head_bias",
+          "shape": [
+            10
+          ]
+        }
+      ],
+      "seed": 29,
+      "task": "digits"
+    },
+    {
+      "family": "mlp",
+      "id": "digits-draw-02-mlp-seed-47",
+      "parameters": [
+        {
+          "name": "hidden_weight",
+          "shape": [
+            16,
+            64
+          ]
+        },
+        {
+          "name": "hidden_bias",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "name": "head_weight",
+          "shape": [
+            10,
+            16
+          ]
+        },
+        {
+          "name": "head_bias",
+          "shape": [
+            10
+          ]
+        }
+      ],
+      "seed": 47,
+      "task": "digits"
+    },
+    {
+      "family": "mlp",
+      "id": "charlm-draw-02-mlp-seed-11",
+      "parameters": [
+        {
+          "name": "hidden_weight",
+          "shape": [
+            16,
+            64
+          ]
+        },
+        {
+          "name": "hidden_bias",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "name": "head_weight",
+          "shape": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "head_bias",
+          "shape": [
+            16
+          ]
+        }
+      ],
+      "seed": 11,
+      "task": "charlm"
+    },
+    {
+      "family": "mlp",
+      "id": "charlm-draw-02-mlp-seed-29",
+      "parameters": [
+        {
+          "name": "hidden_weight",
+          "shape": [
+            16,
+            64
+          ]
+        },
+        {
+          "name": "hidden_bias",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "name": "head_weight",
+          "shape": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "head_bias",
+          "shape": [
+            16
+          ]
+        }
+      ],
+      "seed": 29,
+      "task": "charlm"
+    },
+    {
+      "family": "mlp",
+      "id": "charlm-draw-02-mlp-seed-47",
+      "parameters": [
+        {
+          "name": "hidden_weight",
+          "shape": [
+            16,
+            64
+          ]
+        },
+        {
+          "name": "hidden_bias",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "name": "head_weight",
+          "shape": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "head_bias",
+          "shape": [
+            16
+          ]
+        }
+      ],
+      "seed": 47,
+      "task": "charlm"
+    },
+    {
+      "family": "transformer",
+      "id": "digits-draw-03-transformer-seed-11",
+      "parameters": [
+        {
+          "name": "query_weight",
+          "shape": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "key_weight",
+          "shape": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "value_weight",
+          "shape": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "attention_weight",
+          "shape": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "norm1_gamma",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "name": "norm1_beta",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "name": "ff1_weight",
+          "shape": [
+            16,
+            32
+          ]
+        },
+        {
+          "name": "ff2_weight",
+          "shape": [
+            32,
+            16
+          ]
+        },
+        {
+          "name": "norm2_gamma",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "name": "norm2_beta",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "name": "head_weight",
+          "shape": [
+            10,
+            64
+          ]
+        },
+        {
+          "name": "head_bias",
+          "shape": [
+            10
+          ]
+        }
+      ],
+      "seed": 11,
+      "task": "digits"
+    },
+    {
+      "family": "transformer",
+      "id": "digits-draw-03-transformer-seed-29",
+      "parameters": [
+        {
+          "name": "query_weight",
+          "shape": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "key_weight",
+          "shape": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "value_weight",
+          "shape": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "attention_weight",
+          "shape": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "norm1_gamma",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "name": "norm1_beta",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "name": "ff1_weight",
+          "shape": [
+            16,
+            32
+          ]
+        },
+        {
+          "name": "ff2_weight",
+          "shape": [
+            32,
+            16
+          ]
+        },
+        {
+          "name": "norm2_gamma",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "name": "norm2_beta",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "name": "head_weight",
+          "shape": [
+            10,
+            64
+          ]
+        },
+        {
+          "name": "head_bias",
+          "shape": [
+            10
+          ]
+        }
+      ],
+      "seed": 29,
+      "task": "digits"
+    },
+    {
+      "family": "transformer",
+      "id": "digits-draw-03-transformer-seed-47",
+      "parameters": [
+        {
+          "name": "query_weight",
+          "shape": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "key_weight",
+          "shape": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "value_weight",
+          "shape": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "attention_weight",
+          "shape": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "norm1_gamma",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "name": "norm1_beta",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "name": "ff1_weight",
+          "shape": [
+            16,
+            32
+          ]
+        },
+        {
+          "name": "ff2_weight",
+          "shape": [
+            32,
+            16
+          ]
+        },
+        {
+          "name": "norm2_gamma",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "name": "norm2_beta",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "name": "head_weight",
+          "shape": [
+            10,
+            64
+          ]
+        },
+        {
+          "name": "head_bias",
+          "shape": [
+            10
+          ]
+        }
+      ],
+      "seed": 47,
+      "task": "digits"
+    },
+    {
+      "family": "transformer",
+      "id": "charlm-draw-03-transformer-seed-11",
+      "parameters": [
+        {
+          "name": "query_weight",
+          "shape": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "key_weight",
+          "shape": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "value_weight",
+          "shape": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "attention_weight",
+          "shape": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "norm1_gamma",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "name": "norm1_beta",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "name": "ff1_weight",
+          "shape": [
+            16,
+            32
+          ]
+        },
+        {
+          "name": "ff2_weight",
+          "shape": [
+            32,
+            16
+          ]
+        },
+        {
+          "name": "norm2_gamma",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "name": "norm2_beta",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "name": "head_weight",
+          "shape": [
+            16,
+            64
+          ]
+        },
+        {
+          "name": "head_bias",
+          "shape": [
+            16
+          ]
+        }
+      ],
+      "seed": 11,
+      "task": "charlm"
+    },
+    {
+      "family": "transformer",
+      "id": "charlm-draw-03-transformer-seed-29",
+      "parameters": [
+        {
+          "name": "query_weight",
+          "shape": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "key_weight",
+          "shape": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "value_weight",
+          "shape": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "attention_weight",
+          "shape": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "norm1_gamma",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "name": "norm1_beta",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "name": "ff1_weight",
+          "shape": [
+            16,
+            32
+          ]
+        },
+        {
+          "name": "ff2_weight",
+          "shape": [
+            32,
+            16
+          ]
+        },
+        {
+          "name": "norm2_gamma",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "name": "norm2_beta",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "name": "head_weight",
+          "shape": [
+            16,
+            64
+          ]
+        },
+        {
+          "name": "head_bias",
+          "shape": [
+            16
+          ]
+        }
+      ],
+      "seed": 29,
+      "task": "charlm"
+    },
+    {
+      "family": "transformer",
+      "id": "charlm-draw-03-transformer-seed-47",
+      "parameters": [
+        {
+          "name": "query_weight",
+          "shape": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "key_weight",
+          "shape": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "value_weight",
+          "shape": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "attention_weight",
+          "shape": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "norm1_gamma",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "name": "norm1_beta",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "name": "ff1_weight",
+          "shape": [
+            16,
+            32
+          ]
+        },
+        {
+          "name": "ff2_weight",
+          "shape": [
+            32,
+            16
+          ]
+        },
+        {
+          "name": "norm2_gamma",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "name": "norm2_beta",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "name": "head_weight",
+          "shape": [
+            16,
+            64
+          ]
+        },
+        {
+          "name": "head_bias",
+          "shape": [
+            16
+          ]
+        }
+      ],
+      "seed": 47,
+      "task": "charlm"
+    }
+  ],
+  "version": 1,
+  "weightlang_revision": "379729a3cd0a15ccace3962496edd3f1502eb18f"
+}

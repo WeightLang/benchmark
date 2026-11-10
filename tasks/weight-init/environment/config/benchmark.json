@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "architecture_seed": 20261110,
+  "draws": 4,
+  "initialization_seeds": [11, 29, 47],
+  "train_seed": 101,
+  "test_seed": 202,
+  "train_samples": 96,
+  "test_samples": 96,
+  "steps": 20,
+  "batch_size": 16,
+  "learning_rate": 0.01
+}

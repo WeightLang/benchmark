@@ -1,0 +1,6 @@
+/.vendor/
+/target/
+/jobs/
+/results/
+__pycache__/
+*.pyc

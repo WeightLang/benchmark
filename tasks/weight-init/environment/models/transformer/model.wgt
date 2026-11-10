@@ -1,0 +1,31 @@
+wgt 0.5
+model TinyTransformer
+input x: f32[64]
+output y: f32[3]
+parameter query_weight: f32[16,16]
+parameter key_weight: f32[16,16]
+parameter value_weight: f32[16,16]
+parameter attention_weight: f32[16,16]
+parameter norm1_gamma: f32[16]
+parameter norm1_beta: f32[16]
+parameter ff1_weight: f32[16,32]
+parameter ff2_weight: f32[32,16]
+parameter norm2_gamma: f32[16]
+parameter norm2_beta: f32[16]
+parameter head_weight: f32[3,64]
+parameter head_bias: f32[3]
+fn forward(x) {
+    let tokens: f32[sequence=4, hidden=16] = x as [4,16];
+    let q = tokens @ (query_weight as [16,16]);
+    let k = tokens @ (key_weight as [16,16]);
+    let v = tokens @ (value_weight as [16,16]);
+    let qh: f32[heads=2, query_sequence=4, head_dim=8] = permute(q as [4,2,8],[1,0,2]);
+    let kh: f32[heads=2, key_sequence=4, head_dim=8] = permute(k as [4,2,8],[1,0,2]);
+    let vh: f32[heads=2, key_sequence=4, head_dim=8] = permute(v as [4,2,8],[1,0,2]);
+    let attention = softmax(scale(batch_matmul(qh,permute(kh,[0,2,1])),0.3535533905932738),"key_sequence");
+    let joined = permute(batch_matmul(attention,vh),[1,0,2]) as [4,16];
+    let h = layer_norm(tokens + joined @ (attention_weight as [16,16]),norm1_gamma,norm1_beta,"hidden",0.00001);
+    let ff = relu(h @ (ff1_weight as [16,32])) @ (ff2_weight as [32,16]);
+    let encoded = layer_norm(h + ff,norm2_gamma,norm2_beta,"hidden",0.00001);
+    return linear(encoded as [64],head_weight,head_bias);
+}

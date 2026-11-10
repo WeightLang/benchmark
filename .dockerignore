@@ -1,0 +1,11 @@
+*
+!Cargo.toml
+!Cargo.lock
+!WEIGHTLANG_REVISION
+!src/
+!src/**
+!.vendor/
+!.vendor/weightlang/
+!.vendor/weightlang/**
+.vendor/weightlang/.git
+.vendor/weightlang/target

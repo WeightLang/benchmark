@@ -1,0 +1,12 @@
+wgt 0.5
+model CNN
+input x: f32[64]
+output y: f32[3]
+parameter conv_weight: f32[4,1,3,3]
+parameter conv_bias: f32[4]
+parameter head_weight: f32[3,64]
+parameter head_bias: f32[3]
+fn forward(x) {
+    let h = relu(conv(x as [1,8,8], conv_weight as [4,1,3,3], conv_bias, [2,2], [1,1], [1,1], 1));
+    return linear(h as [64], head_weight, head_bias);
+}

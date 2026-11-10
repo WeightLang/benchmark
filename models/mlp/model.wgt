@@ -1,0 +1,12 @@
+wgt 0.5
+model MLP
+input x: f32[64]
+output y: f32[3]
+parameter hidden_weight: f32[16,64]
+parameter hidden_bias: f32[16]
+parameter head_weight: f32[3,16]
+parameter head_bias: f32[3]
+fn forward(x) {
+    let h = relu(linear(x, hidden_weight, hidden_bias));
+    return linear(h, head_weight, head_bias);
+}

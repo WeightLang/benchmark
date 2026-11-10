@@ -1,0 +1,26 @@
+schema_version = "1.4"
+artifacts = []
+[task]
+name = "weightlang/weight-init"
+version = "0.1.0"
+description = "Weight initialization on fixed digit and character-language tasks with sampled WGT architectures"
+keywords = ["weightlang", "initialization", "digits", "language-model", "cpu"]
+[metadata]
+difficulty = "hard"
+category = "machine-learning"
+[agent]
+timeout_sec = 1200.0
+[environment]
+network_mode = "public"
+build_timeout_sec = 600.0
+cpus = 2
+memory_mb = 2048
+storage_mb = 2048
+[verifier]
+timeout_sec = 1200.0
+environment_mode = "separate"
+[verifier.environment]
+network_mode = "no-network"
+cpus = 2
+memory_mb = 2048
+storage_mb = 2048

@@ -1,6 +1,8 @@
 # weightlang/weight-init
 
-Agent 为固定手写数字识别和字符语言模型任务提交初始权重，完整要求见
+被评测的 AI agent 读取抽取的通用模型架构，编写可重复运行的权重初始化算法，
+提交算法源码、设计说明和生成的初始权重。评测器将其与随机初始化组做配对比较，
+以跨架构表现作为架构与权重理解能力的初步行为证据。完整要求见
 [instruction.md](instruction.md)。抽样架构：MLP/CNN/ResNet/Transformer；24 个试验。
 
 环境使用本项目 `weight-init-bench:0.1.0`，基于 Debian Bookworm，包含 Rust 原生
@@ -11,6 +13,8 @@ Verifier 在独立的干净容器中运行，仅从 `/logs/artifacts/submission.
 数值权重。固定架构和测试集来自 verifier 自己的镜像。程序验证完整参数绑定，随后
 执行 20 步 Adam 和三种随机初始化对照。reward 为平均最终准确率；更多指标保存在
 `/logs/verifier/report.json`。Oracle 是 Xavier 对照，不保证准确率为 1。
+当前只自动验证权重，尚不自动重放或审计算法源码；未测真实 AI agent 或未见架构，
+不能将现有随机基线验收结果称为 AI 理解能力排名。
 
 ```text
 instruction.md         agent 任务说明

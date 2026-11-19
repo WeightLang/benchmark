@@ -1,0 +1,367 @@
+{
+  "validation": "sdk-source-refresh",
+  "experiment_date": "2026-11-20",
+  "executed_at_utc": "2026-11-19T23:37:01.585869+00:00",
+  "application": {
+    "name": "weight-init-bench",
+    "version": "0.1.0",
+    "edition": "2024",
+    "license": "MIT"
+  },
+  "weightlang_revision": "072582a03a123b7d95c815d563689383033019d4",
+  "previous_weightlang_revision": "379729a3cd0a15ccace3962496edd3f1502eb18f",
+  "source": {
+    "upstream_url": "https://github.com/WeightLang/WeightLang/commit/072582a03a123b7d95c815d563689383033019d4",
+    "source_method": "git archive of verified published commit; all file Git blob IDs, modes and symlink targets checked",
+    "before": {
+      "revision": "379729a3cd0a15ccace3962496edd3f1502eb18f",
+      "files": 679,
+      "bytes": 7285894,
+      "blob_modes_and_symlinks_verified": true
+    },
+    "after": {
+      "revision": "072582a03a123b7d95c815d563689383033019d4",
+      "files": 785,
+      "bytes": 8054092,
+      "blob_modes_and_symlinks_verified": true
+    }
+  },
+  "build": {
+    "weightlang_revision": "072582a03a123b7d95c815d563689383033019d4",
+    "rustc": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
+    "cargo": "cargo 1.100.0 (3acc79c0c 2026-11-05)",
+    "target_dir": "/home/lightjunction/Documents/GITHUB/WeightLang/WeightLang/target",
+    "steps": [
+      {
+        "command": [
+          "cargo",
+          "+1.100.0",
+          "build",
+          "--offline",
+          "--target-dir",
+          "/home/lightjunction/Documents/GITHUB/WeightLang/WeightLang/target",
+          "-j2"
+        ],
+        "exit_code": 0,
+        "wall_seconds": 230.622
+      },
+      {
+        "command": [
+          "cargo",
+          "+1.100.0",
+          "test",
+          "--offline",
+          "--locked",
+          "--target-dir",
+          "/home/lightjunction/Documents/GITHUB/WeightLang/WeightLang/target",
+          "-j2"
+        ],
+        "exit_code": 0,
+        "wall_seconds": 29.273
+      },
+      {
+        "command": [
+          "python3",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-v"
+        ],
+        "exit_code": 0,
+        "wall_seconds": 0.278
+      },
+      {
+        "command": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "exit_code": 0,
+        "wall_seconds": 0.031
+      }
+    ],
+    "added_or_updated_locked_packages": [
+      {
+        "name": "autocfg",
+        "version": "1.5.1"
+      },
+      {
+        "name": "crunchy",
+        "version": "0.2.4"
+      },
+      {
+        "name": "either",
+        "version": "1.19.0"
+      },
+      {
+        "name": "getopts",
+        "version": "0.2.24"
+      },
+      {
+        "name": "getrandom",
+        "version": "0.2.17"
+      },
+      {
+        "name": "heck",
+        "version": "0.5.0"
+      },
+      {
+        "name": "is-macro",
+        "version": "0.3.8"
+      },
+      {
+        "name": "itertools",
+        "version": "0.11.0"
+      },
+      {
+        "name": "lalrpop-util",
+        "version": "0.20.2"
+      },
+      {
+        "name": "log",
+        "version": "0.4.35"
+      },
+      {
+        "name": "num-bigint",
+        "version": "0.4.8"
+      },
+      {
+        "name": "num-integer",
+        "version": "0.1.47"
+      },
+      {
+        "name": "num-traits",
+        "version": "0.2.19"
+      },
+      {
+        "name": "phf",
+        "version": "0.11.3"
+      },
+      {
+        "name": "phf_codegen",
+        "version": "0.11.3"
+      },
+      {
+        "name": "phf_generator",
+        "version": "0.11.3"
+      },
+      {
+        "name": "phf_shared",
+        "version": "0.11.3"
+      },
+      {
+        "name": "ppv-lite86",
+        "version": "0.2.21"
+      },
+      {
+        "name": "rand",
+        "version": "0.8.8"
+      },
+      {
+        "name": "rand_chacha",
+        "version": "0.3.1"
+      },
+      {
+        "name": "rand_core",
+        "version": "0.6.4"
+      },
+      {
+        "name": "rustc-hash",
+        "version": "1.1.0"
+      },
+      {
+        "name": "rustpython-ast",
+        "version": "0.4.0"
+      },
+      {
+        "name": "rustpython-parser",
+        "version": "0.4.0"
+      },
+      {
+        "name": "rustpython-parser-core",
+        "version": "0.4.0"
+      },
+      {
+        "name": "rustpython-parser-vendored",
+        "version": "0.4.0"
+      },
+      {
+        "name": "siphasher",
+        "version": "1.0.4"
+      },
+      {
+        "name": "static_assertions",
+        "version": "1.1.0"
+      },
+      {
+        "name": "tiny-keccak",
+        "version": "2.0.2"
+      },
+      {
+        "name": "unic-char-property",
+        "version": "0.9.0"
+      },
+      {
+        "name": "unic-char-range",
+        "version": "0.9.0"
+      },
+      {
+        "name": "unic-common",
+        "version": "0.9.0"
+      },
+      {
+        "name": "unic-emoji-char",
+        "version": "0.9.0"
+      },
+      {
+        "name": "unic-ucd-ident",
+        "version": "0.9.0"
+      },
+      {
+        "name": "unic-ucd-version",
+        "version": "0.9.0"
+      },
+      {
+        "name": "unicode-width",
+        "version": "0.2.3"
+      },
+      {
+        "name": "unicode_names2",
+        "version": "1.3.0"
+      },
+      {
+        "name": "unicode_names2_generator",
+        "version": "1.3.0"
+      },
+      {
+        "name": "wasi",
+        "version": "0.11.1+wasi-snapshot-preview1"
+      },
+      {
+        "name": "wgt-language",
+        "version": "0.5.4"
+      },
+      {
+        "name": "wgt-model",
+        "version": "0.5.4"
+      },
+      {
+        "name": "wgt-model-macros",
+        "version": "0.5.4"
+      },
+      {
+        "name": "wgtime",
+        "version": "0.5.4"
+      },
+      {
+        "name": "zerocopy",
+        "version": "0.8.63"
+      },
+      {
+        "name": "zerocopy-derive",
+        "version": "0.8.63"
+      }
+    ],
+    "removed_or_updated_locked_packages": [
+      {
+        "name": "wgt-language",
+        "version": "0.5.2"
+      },
+      {
+        "name": "wgt-model",
+        "version": "0.5.2"
+      },
+      {
+        "name": "wgt-model-macros",
+        "version": "0.5.2"
+      },
+      {
+        "name": "wgtime",
+        "version": "0.5.2"
+      }
+    ],
+    "native_package_metadata_count": 80,
+    "native_dependencies_declaring_rust_above_1_99": [],
+    "manifest_trials": 24,
+    "wall_seconds_including_lock_wait": 266.468,
+    "log": "/tmp/weightlang/benchmark-sdk-20261120-build.log"
+  },
+  "checks": {
+    "rust_tests_passed": 4,
+    "python_protocol_tests_passed": 4,
+    "native_smoke": {
+      "executed_at_utc": "2026-11-19T23:37:01.585869+00:00",
+      "command": [
+        "python3",
+        "scripts/check_sdk_smoke.py",
+        "--binary",
+        "/home/lightjunction/Documents/GITHUB/WeightLang/benchmark/target/debug/weight-init-bench",
+        "--daemon",
+        "/home/lightjunction/Documents/GITHUB/WeightLang/WeightLang/target/debug/wgtime",
+        "--report",
+        "/home/lightjunction/Documents/GITHUB/WeightLang/benchmark/validation/sdk-refresh-20261120-smoke.json"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.532,
+      "weightlang_revision": "072582a03a123b7d95c815d563689383033019d4",
+      "backend": "native-cpu",
+      "executions": 6,
+      "families": [
+        "resnet"
+      ],
+      "tasks": [
+        "charlm",
+        "digits"
+      ],
+      "steps_per_execution": 1,
+      "batch_size": 1,
+      "train_samples": 96,
+      "test_samples": 96,
+      "report": "/home/lightjunction/Documents/GITHUB/WeightLang/benchmark/validation/sdk-refresh-20261120-smoke.json",
+      "report_sha256": "4fe67ddea6c875f71c81b25ba15feb29d8a161fe8243ed18e09acb2c59c9a1bb",
+      "daemon_path": "/home/lightjunction/Documents/GITHUB/WeightLang/WeightLang/target/debug/wgtime",
+      "benchmark_sha256": "e3d31af8fb686b9cbc22e99258d3e28426097a2eb641b3edf0af36488104e252",
+      "wgtime_sha256": "4e690647b5644f2bb3de14c880edefe016d10a878ce034c28ad0dccea83ae6a5",
+      "log": "/tmp/weightlang/benchmark-sdk-20261120-smoke.log"
+    }
+  },
+  "artifact_sha256": {
+    "Cargo.lock": "7c1fb7c6493a98e55f3313ed7ca4a7bbefe3d660a67a8fb381eb7d07378faa48",
+    "src/main.rs": "a58bef8089fd70dcfe9373c3d34928bd0b3010136411c00d410c10480aa97823",
+    "scripts/check_sdk_smoke.py": "8c6310160b03890f3a0871601231fd84c9ec466b2be4e82ef4dd8bd60d766956",
+    "tests/test_protocol.py": "2832d427ad638c07fa0a203499fd45b07beb15a37c28bfd1ad21450d81b812e3",
+    "tasks/weight-init/environment/manifest.json": "cab49f069adc9c22ef922e66aa02b4716f3280230bb7dc4109723ad867a38b97",
+    "validation/sdk-refresh-20261120-smoke.json": "4fe67ddea6c875f71c81b25ba15feb29d8a161fe8243ed18e09acb2c59c9a1bb"
+  },
+  "scope": {
+    "rust_unit_models": [
+      "mlp",
+      "cnn",
+      "resnet",
+      "transformer"
+    ],
+    "native_smoke_models": [
+      "resnet"
+    ],
+    "native_smoke_covers": [
+      "snapshot save/load",
+      "forward evaluation",
+      "one Adam update per task/initializer pair"
+    ],
+    "toolchain_tested": "1.100.0",
+    "repository_toolchain_file": "1.99.0 (unchanged; not rebuilt in this run)",
+    "full_benchmark_budget_unchanged": true,
+    "harbor_oracle_nop_rerun": false,
+    "performance_comparison": false,
+    "historical_validation_preserved": [
+      "acceptance.json",
+      "oracle-report.json"
+    ]
+  },
+  "output": {
+    "build_and_tests": "RUN [\"cargo\", \"+1.100.0\", \"build\", \"--offline\", \"--target-dir\", \"/home/lightjunction/Documents/GITHUB/WeightLang/WeightLang/target\", \"-j2\"]\n    Blocking waiting for file lock on package cache\n    Blocking waiting for file lock on package cache\n     Locking 45 packages to highest Rust 1.100.0 compatible versions\n      Adding autocfg v1.5.1\n      Adding crunchy v0.2.4\n      Adding either v1.19.0\n      Adding getopts v0.2.24\n      Adding getrandom v0.2.17\n      Adding heck v0.5.0\n      Adding is-macro v0.3.8\n      Adding itertools v0.11.0\n      Adding lalrpop-util v0.20.2\n      Adding log v0.4.35\n      Adding num-bigint v0.4.8\n      Adding num-integer v0.1.47\n      Adding num-traits v0.2.19\n      Adding phf v0.11.3\n      Adding phf_codegen v0.11.3\n      Adding phf_generator v0.11.3\n      Adding phf_shared v0.11.3\n      Adding ppv-lite86 v0.2.21\n      Adding rand v0.8.8\n      Adding rand_chacha v0.3.1\n      Adding rand_core v0.6.4\n      Adding rustc-hash v1.1.0\n      Adding rustpython-ast v0.4.0\n      Adding rustpython-parser v0.4.0\n      Adding rustpython-parser-core v0.4.0\n      Adding rustpython-parser-vendored v0.4.0\n      Adding siphasher v1.0.4\n      Adding static_assertions v1.1.0\n      Adding tiny-keccak v2.0.2\n      Adding unic-char-property v0.9.0\n      Adding unic-char-range v0.9.0\n      Adding unic-common v0.9.0\n      Adding unic-emoji-char v0.9.0\n      Adding unic-ucd-ident v0.9.0\n      Adding unic-ucd-version v0.9.0\n      Adding unicode-width v0.2.3\n      Adding unicode_names2 v1.3.0\n      Adding unicode_names2_generator v1.3.0\n      Adding wasi v0.11.1+wasi-snapshot-preview1\n    Updating wgt-language v0.5.2 (/home/lightjunction/Documents/GITHUB/WeightLang/benchmark/.vendor/weightlang/crates/wgt-language) -> v0.5.4\n    Updating wgt-model v0.5.2 (/home/lightjunction/Documents/GITHUB/WeightLang/benchmark/.vendor/weightlang/crates/wgt-model) -> v0.5.4\n    Updating wgt-model-macros v0.5.2 (/home/lightjunction/Documents/GITHUB/WeightLang/benchmark/.vendor/weightlang/crates/wgt-model-macros) -> v0.5.4\n    Updating wgtime v0.5.2 (/home/lightjunction/Documents/GITHUB/WeightLang/benchmark/.vendor/weightlang/crates/wgtime) -> v0.5.4\n      Adding zerocopy v0.8.63\n      Adding zerocopy-derive v0.8.63\n    Blocking waiting for file lock on package cache\n    Blocking waiting for file lock on package cache\n    Blocking waiting for file lock on package cache\n   Compiling wgt-language v0.5.4 (/home/lightjunction/Documents/GITHUB/WeightLang/benchmark/.vendor/weightlang/crates/wgt-language)\n   Compiling serde_json v1.0.154\n   Compiling safetensors v0.8.0\n   Compiling wgt-model-macros v0.5.4 (/home/lightjunction/Documents/GITHUB/WeightLang/benchmark/.vendor/weightlang/crates/wgt-model-macros)\n   Compiling wgtime v0.5.4 (/home/lightjunction/Documents/GITHUB/WeightLang/benchmark/.vendor/weightlang/crates/wgtime)\n   Compiling wgt-model v0.5.4 (/home/lightjunction/Documents/GITHUB/WeightLang/benchmark/.vendor/weightlang/crates/wgt-model)\n   Compiling weight-init-bench v0.1.0 (/home/lightjunction/Documents/GITHUB/WeightLang/benchmark)\n    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3m 50s\nRUN [\"cargo\", \"+1.100.0\", \"test\", \"--offline\", \"--locked\", \"--target-dir\", \"/home/lightjunction/Documents/GITHUB/WeightLang/WeightLang/target\", \"-j2\"]\n    Blocking waiting for file lock on build directory\n   Compiling weight-init-bench v0.1.0 (/home/lightjunction/Documents/GITHUB/WeightLang/benchmark)\n    Finished `test` profile [unoptimized + debuginfo] target(s) in 29.03s\n     Running unittests src/main.rs (/home/lightjunction/Documents/GITHUB/WeightLang/WeightLang/target/debug/build/weight-init-bench/d960ba8dd9d6e1af/out/weight_init_bench-d960ba8dd9d6e1af)\n\nrunning 4 tests\ntest tests::correct_fans_for_convolution_and_matmul ... ok\ntest tests::data_and_rng_are_reproducible_and_split ... ok\ntest tests::invalid_weights_are_rejected ... ok\ntest tests::models_and_sampling ... ok\n\ntest result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s\n\nRUN [\"python3\", \"-m\", \"unittest\", \"discover\", \"-s\", \"tests\", \"-v\"]\ntest_agent_does_not_receive_holdout (test_protocol.ProtocolTests.test_agent_does_not_receive_holdout) ... ok\ntest_data_provenance (test_protocol.ProtocolTests.test_data_provenance) ... ok\ntest_manifest_is_repeatable (test_protocol.ProtocolTests.test_manifest_is_repeatable) ... ok\ntest_submission_validation_happens_before_service_start (test_protocol.ProtocolTests.test_submission_validation_happens_before_service_start) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.144s\n\nOK\nRUN [\"git\", \"diff\", \"--check\"]\n",
+    "native_smoke": "evaluating digits-draw-00-resnet-seed-11\nevaluating charlm-draw-00-resnet-seed-11\n{\n  \"weightlang_revision\": \"072582a03a123b7d95c815d563689383033019d4\",\n  \"backend\": \"native-cpu\",\n  \"executions\": 6,\n  \"families\": [\n    \"resnet\"\n  ],\n  \"tasks\": [\n    \"charlm\",\n    \"digits\"\n  ],\n  \"steps_per_execution\": 1,\n  \"batch_size\": 1,\n  \"report\": \"/home/lightjunction/Documents/GITHUB/WeightLang/benchmark/validation/sdk-refresh-20261120-smoke.json\"\n}\n"
+  }
+}

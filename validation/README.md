@@ -1,4 +1,39 @@
-# 本地验收：2026-11-10
+# 本地验收记录
+
+## SDK 源码同步：2026-11-20
+
+本轮将 Rust SDK 固定到 WeightLang 功能提交
+[072582a03a123b7d95c815d563689383033019d4](https://github.com/WeightLang/WeightLang/commit/072582a03a123b7d95c815d563689383033019d4)。
+本机 vendor 由该已发布提交的 `git archive` 生成，785 个文件的 Git blob、文件模式及符号链接均逐项校验。
+`scripts/bootstrap.sh` 仍按 `WEIGHTLANG_REVISION` 下载固定提交的归档；
+vendor 以源码归档存放，来源由固定提交和逐文件内容校验确认。
+
+本轮 Rust 4 项测试、Python 协议 4 项测试通过。Rust 测试覆盖四个模型族的解析、
+参数合同和快照构造；协议测试确认可执行文件内嵌版本、vendor marker、源码 pin
+和 Harbor 环境 manifest 一致。配套新 `wgtime` 还完成 6 次真实 `native-cpu`
+初始化、快照保存/加载、前向评估及单步训练：ResNet × 数字/字符两项任务 ×
+三个初始化方法，每次 batch=1，使用原有 96 个训练样本及 96 个测试样本。
+
+构建与测试使用 Rust 1.100.0，并复用本机共享 target 和编译串行锁。
+应用版本仍为 0.1.0，默认完整协议的 24 个 trial、20 步预算及数据均保持原值；
+轻量验收仅在临时目录中设置单步预算。机器记录、实际命令、工具链、二进制及数据摘要见
+[sdk-refresh-20261120.json](sdk-refresh-20261120.json)，原始运行结果见
+[sdk-refresh-20261120-smoke.json](sdk-refresh-20261120-smoke.json)。
+
+使用已经构建的匹配产物可复验该入口，输出路径必须是新文件：
+
+```sh
+python3 scripts/check_sdk_smoke.py \
+  --binary target/debug/weight-init-bench \
+  --daemon target/debug/wgtime \
+  --report /tmp/weight-init-sdk-smoke.json
+```
+
+本轮证据覆盖 Rust 1.100.0 的本机 SDK 与轻量原生服务验收。
+下面的 Rust 1.99.0、Harbor Oracle/NOP、完整训练预算及分数证据仍对应 2026-11-10
+的旧源码提交，不能作为本轮重新运行的结果。
+
+## 完整协议与 Harbor 验收：2026-11-10
 
 Rust 4 项测试、Python 协议 4 项测试通过。96 次真实模型初始化/训练执行
 （24 个 trial × 候选及 3 个对照）完成，没有使用模拟后端。

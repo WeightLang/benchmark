@@ -1,0 +1,363 @@
+{
+  "backend": "native-cpu",
+  "by_task": {
+    "charlm": {
+      "kaiming_normal": {
+        "accuracy": 0.08333333333333333,
+        "cross_entropy": 2.787535360925638,
+        "n": 1,
+        "perplexity_from_mean_cross_entropy": 16.240942372700687
+      },
+      "normal": {
+        "accuracy": 0.11458333333333333,
+        "cross_entropy": 2.77140179944883,
+        "n": 1,
+        "perplexity_from_mean_cross_entropy": 15.981020501172807
+      },
+      "xavier_uniform": {
+        "accuracy": 0.010416666666666666,
+        "cross_entropy": 2.8435151082965895,
+        "n": 1,
+        "perplexity_from_mean_cross_entropy": 17.176035171676613
+      }
+    },
+    "digits": {
+      "kaiming_normal": {
+        "accuracy": 0.041666666666666664,
+        "cross_entropy": 2.332510392975227,
+        "n": 1,
+        "perplexity_from_mean_cross_entropy": 10.303775618553832
+      },
+      "normal": {
+        "accuracy": 0.125,
+        "cross_entropy": 2.3029718981936256,
+        "n": 1,
+        "perplexity_from_mean_cross_entropy": 10.003868800183575
+      },
+      "xavier_uniform": {
+        "accuracy": 0.07291666666666667,
+        "cross_entropy": 2.6071998507718,
+        "n": 1,
+        "perplexity_from_mean_cross_entropy": 13.561024744318091
+      }
+    }
+  },
+  "paired_accuracy_delta": {},
+  "protocol": {
+    "config": {
+      "architecture_seed": 20261110,
+      "batch_size": 1,
+      "draws": 1,
+      "initialization_seeds": [
+        11
+      ],
+      "learning_rate": 0.009999999776482582,
+      "steps": 1,
+      "test_samples": 96,
+      "test_seed": 202,
+      "train_samples": 96,
+      "train_seed": 101,
+      "version": 1
+    },
+    "data_sha256": {
+      "charlm-test.json": "64cfa9aa4910b53ad85ae58420679dd167430948a22a09a33c392acb04b0e8b0",
+      "charlm-train.json": "6b697331b3867e2fa7020658afe42fa98b6d57f77eba712671d45f80ecbf0087",
+      "digits-test.json": "e16ac55d231b30dd253f3c67f40e7dad8e92b9ad1abb30a18c18b90e1395e88e",
+      "digits-train.json": "60cb08bdde1e8b2b9e553f944c78a92ef1fd5b84ccea5586b32271141fa8c736"
+    },
+    "model_sha256": {
+      "cnn": "77a66a1a931e05557dae20f4be16115aa9a5df53adcd591998e07378e9bc810d",
+      "mlp": "62563e69547ffac0711d2738d88da4ac42c88b8fccc9687b40750b33e83b5024",
+      "resnet": "2b036b9fa5f1606a776d6d0ee444ec01d583cadbaed46dc2e0e711eaffd2d0fa",
+      "transformer": "594e621444a876e4506b233982624216eba5b2012666664ee8195ffff03e21bd"
+    },
+    "trials": [
+      {
+        "family": "resnet",
+        "id": "digits-draw-00-resnet-seed-11",
+        "parameters": [
+          {
+            "name": "stem_weight",
+            "shape": [
+              2,
+              1,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "stem_bias",
+            "shape": [
+              2
+            ]
+          },
+          {
+            "name": "block1_weight",
+            "shape": [
+              2,
+              2,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "block1_bias",
+            "shape": [
+              2
+            ]
+          },
+          {
+            "name": "block2_weight",
+            "shape": [
+              2,
+              2,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "block2_bias",
+            "shape": [
+              2
+            ]
+          },
+          {
+            "name": "head_weight",
+            "shape": [
+              10,
+              32
+            ]
+          },
+          {
+            "name": "head_bias",
+            "shape": [
+              10
+            ]
+          }
+        ],
+        "seed": 11,
+        "task": "digits"
+      },
+      {
+        "family": "resnet",
+        "id": "charlm-draw-00-resnet-seed-11",
+        "parameters": [
+          {
+            "name": "stem_weight",
+            "shape": [
+              2,
+              1,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "stem_bias",
+            "shape": [
+              2
+            ]
+          },
+          {
+            "name": "block1_weight",
+            "shape": [
+              2,
+              2,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "block1_bias",
+            "shape": [
+              2
+            ]
+          },
+          {
+            "name": "block2_weight",
+            "shape": [
+              2,
+              2,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "block2_bias",
+            "shape": [
+              2
+            ]
+          },
+          {
+            "name": "head_weight",
+            "shape": [
+              16,
+              32
+            ]
+          },
+          {
+            "name": "head_bias",
+            "shape": [
+              16
+            ]
+          }
+        ],
+        "seed": 11,
+        "task": "charlm"
+      }
+    ],
+    "version": 1,
+    "weightlang_revision": "072582a03a123b7d95c815d563689383033019d4"
+  },
+  "reward": null,
+  "summary": {
+    "kaiming_normal": {
+      "mean_final_accuracy": 0.0625,
+      "n": 2,
+      "stddev_across_trials": 0.02946278254943948
+    },
+    "normal": {
+      "mean_final_accuracy": 0.11979166666666666,
+      "n": 2,
+      "stddev_across_trials": 0.0073656956373598734
+    },
+    "xavier_uniform": {
+      "mean_final_accuracy": 0.04166666666666667,
+      "n": 2,
+      "stddev_across_trials": 0.04419417382415922
+    }
+  },
+  "trials": [
+    {
+      "family": "resnet",
+      "method": "normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.125,
+          "cross_entropy": 2.3029718981936256,
+          "perplexity": 10.003868800183575
+        },
+        "initial": {
+          "accuracy": 0.03125,
+          "cross_entropy": 2.3028835437986674,
+          "perplexity": 10.002984953454941
+        },
+        "training_loss": [
+          2.3004422187805176
+        ],
+        "weights_revision": "02b8a9acc51a1608890ee76cea1e46aa2e3bd9aa88813a4d77bd62fabc1255d4"
+      },
+      "task": "digits",
+      "trial": "digits-draw-00-resnet-seed-11"
+    },
+    {
+      "family": "resnet",
+      "method": "xavier_uniform",
+      "metrics": {
+        "final": {
+          "accuracy": 0.07291666666666667,
+          "cross_entropy": 2.6071998507718,
+          "perplexity": 13.561024744318091
+        },
+        "initial": {
+          "accuracy": 0.07291666666666667,
+          "cross_entropy": 2.7638873527716807,
+          "perplexity": 15.861382046133066
+        },
+        "training_loss": [
+          3.491874933242798
+        ],
+        "weights_revision": "929d54fcecc3c9b4995ba434f9b90a777e12494862f52b98d4206f604fcfdd1a"
+      },
+      "task": "digits",
+      "trial": "digits-draw-00-resnet-seed-11"
+    },
+    {
+      "family": "resnet",
+      "method": "kaiming_normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.041666666666666664,
+          "cross_entropy": 2.332510392975227,
+          "perplexity": 10.303775618553832
+        },
+        "initial": {
+          "accuracy": 0.03125,
+          "cross_entropy": 2.3271619253601163,
+          "perplexity": 10.248813321399199
+        },
+        "training_loss": [
+          2.195899724960327
+        ],
+        "weights_revision": "f6d265750ef37b4d183893b644f64b9d27b299c63a2570d33092c0b6caba81f0"
+      },
+      "task": "digits",
+      "trial": "digits-draw-00-resnet-seed-11"
+    },
+    {
+      "family": "resnet",
+      "method": "normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.11458333333333333,
+          "cross_entropy": 2.77140179944883,
+          "perplexity": 15.981020501172807
+        },
+        "initial": {
+          "accuracy": 0.07291666666666667,
+          "cross_entropy": 2.7715908024247007,
+          "perplexity": 15.98404124706097
+        },
+        "training_loss": [
+          2.7674663066864014
+        ],
+        "weights_revision": "999e2380e0783757b0949fe6b4da4a2449211b8e9663ab60dc49b8b1614728e2"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-00-resnet-seed-11"
+    },
+    {
+      "family": "resnet",
+      "method": "xavier_uniform",
+      "metrics": {
+        "final": {
+          "accuracy": 0.010416666666666666,
+          "cross_entropy": 2.8435151082965895,
+          "perplexity": 17.176035171676613
+        },
+        "initial": {
+          "accuracy": 0.010416666666666666,
+          "cross_entropy": 2.869719197819601,
+          "perplexity": 17.632066381944238
+        },
+        "training_loss": [
+          3.2192089557647705
+        ],
+        "weights_revision": "178e78b17342cf148a5558d1a50b6e6af53d3ed6f85b8ea34e8690bcb682ff6c"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-00-resnet-seed-11"
+    },
+    {
+      "family": "resnet",
+      "method": "kaiming_normal",
+      "metrics": {
+        "final": {
+          "accuracy": 0.08333333333333333,
+          "cross_entropy": 2.787535360925638,
+          "perplexity": 16.240942372700687
+        },
+        "initial": {
+          "accuracy": 0.052083333333333336,
+          "cross_entropy": 2.7859587043298633,
+          "perplexity": 16.21535615942342
+        },
+        "training_loss": [
+          2.562439441680908
+        ],
+        "weights_revision": "7e7050c87e6e071b0470fba2f0bfa2d0416dabf9e4448e49b3e0337eac677c6e"
+      },
+      "task": "charlm",
+      "trial": "charlm-draw-00-resnet-seed-11"
+    }
+  ]
+}

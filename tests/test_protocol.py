@@ -39,6 +39,17 @@ class ProtocolTests(unittest.TestCase):
         manifest = json.loads(subprocess.check_output(cmd))
         self.assertEqual(len(manifest["trials"]), 24)
         self.assertEqual({t["task"] for t in manifest["trials"]}, {"digits", "charlm"})
+        revision = (ROOT / "WEIGHTLANG_REVISION").read_text().strip()
+        self.assertRegex(revision, r"^[0-9a-f]{40}$")
+        self.assertEqual(manifest["weightlang_revision"], revision)
+        self.assertEqual(
+            (ROOT / ".vendor/weightlang/.benchmark-revision").read_text().strip(),
+            revision,
+        )
+        # A rebuilt executable and the agent context must describe the same SDK,
+        # model schemas, data hashes and evaluation budget.
+        context = json.loads((ROOT / "tasks/weight-init/environment/manifest.json").read_text())
+        self.assertEqual(context, manifest)
 
 
 if __name__ == "__main__":
